@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_80"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/second_hand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二手房" />
+
+            <RadioButton
+                android:id="@+id/resent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="租房" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_price"
+            style="@style/find_house_text"
+            android:layout_marginTop="@dimen/dimen_80"
+            android:text="售价(万元)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/white">
+
+
+            <com.eke.cust.widget.rangeseekbar.RangeSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:absoluteMaxValue="1010"
+                app:absoluteMinValue="0"
+                android:id="@+id/range_price"
+                app:activeColor="@color/red"
+                app:defaultColor="@color/product_list_tab_color"
+                app:textAboveThumbsColor="@color/red"
+                app:thumbDisabled="@drawable/seek_thumb_pressed_bg"
+                app:thumbNormal="@drawable/seek_thumb_bg"
+                app:thumbPressed="@drawable/seek_thumb_bg"
+                app:thumbShadow="true"
+                app:thumbShadowBlur="3dp"
+                app:thumbShadowColor="@color/black1"
+                app:thumbShadowXOffset="1dp"
+                app:thumbShadowYOffset="1dp" />
+        </LinearLayout>
+
+        <TextView
+
+            style="@style/find_house_text"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="户型(室)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_white_bg"
+                android:padding="@dimen/dimen_1">
+
+                <ImageView
+                    android:id="@+id/iv_minus"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/icon_minus" />
+
+                <TextView
+                    android:id="@+id/txt_number"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_frame_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textColor="@color/red" />
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/icon_add" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/find_house_text"
+            android:layout_marginTop="5dp"
+            android:text="面积(平方)" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.eke.cust.widget.rangeseekbar.RangeSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:absoluteMaxValue="210"
+                app:absoluteMinValue="0"
+                android:id="@+id/range_area"
+                app:activeColor="@color/red"
+                app:defaultColor="@color/product_list_tab_color"
+                app:textAboveThumbsColor="@color/red"
+                app:thumbDisabled="@drawable/seek_thumb_pressed_bg"
+                app:thumbNormal="@drawable/seek_thumb_bg"
+                app:thumbPressed="@drawable/seek_thumb_bg"
+                app:thumbShadow="true"
+                app:thumbShadowBlur="3dp"
+                app:thumbShadowColor="@color/black1"
+                app:thumbShadowXOffset="1dp"
+                app:thumbShadowYOffset="1dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_bt_bg"
+            android:gravity="center"
+            android:text="@string/bt_login"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

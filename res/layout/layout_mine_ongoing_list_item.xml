@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房源编号: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_housenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="1234567"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房源信息: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_fangyuanxinxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="星河盛世"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性        质: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_xingzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="出租"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金        额: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_jine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="1300元"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房        源: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_fangyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="EKE"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跟        房: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_genfang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="韦小宝"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付状态: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_zhifuzhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="1000/10000"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合同状态: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_hetongzhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="未签约"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备        注: "
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_beizhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="2015年1月后"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="10dip" >
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_ongoing_next"
+                android:text="下一步"
+                android:textColor="@color/custom_grey"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

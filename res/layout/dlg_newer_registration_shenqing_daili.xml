@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#999999" >
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/dailichongzhi_commit_bg"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="确认"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_daili_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/dailichongzhi_edit_bg" >
+
+        <TextView
+            android:id="@+id/tv_daili_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="0/0"
+            android:textColor="#1e1e1e"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_daili_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="重选"
+            android:textColor="#000066"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/chongzhi_loupan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_daili_num"
+            android:layout_alignLeft="@+id/tv_daili_num"
+            android:layout_alignRight="@+id/tv_daili_can_not_find"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/dailichongzhi_edit_bg"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_submit"
+        android:layout_below="@id/rl_daili_top"
+        android:orientation="vertical"
+        android:background="@drawable/dailichongzhi_edit_bg"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:weightSum="8"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/chongzhi_quxian"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:hint="区县"
+                />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="#a1a1a1" />
+            <TextView
+                android:id="@+id/chongzhi_pianqu"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:hint="片区"
+                />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="#a1a1a1" />
+
+
+            <EditText
+                android:id="@+id/et_content_find"
+                android:layout_width="0dip"
+                android:layout_height="26dip"
+                android:layout_weight="4"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:hint="请输入楼盘名称"
+                android:singleLine="true"
+                android:layout_marginLeft="5dip"
+                android:textColor="@color/black"
+                android:textSize="12sp" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/register_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/search_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listview_loupan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dip"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"/>
+    </LinearLayout>
+</RelativeLayout>

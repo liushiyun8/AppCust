@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:soundEffectsEnabled="false" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dip"
+        android:orientation="horizontal"
+        android:weightSum="8" >
+
+        <TextView
+            android:id="@+id/chongzhi_quxian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:hint="区县"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="#a1a1a1" />
+
+        <TextView
+            android:id="@+id/chongzhi_pianqu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:hint="片区"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="#a1a1a1" />
+
+        <EditText
+            android:id="@+id/et_content_find"
+            android:layout_width="0dip"
+            android:layout_height="26dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="4"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="请输入楼盘名称"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="12sp" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/chongzhi_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/search_icon" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listview_loupan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:minHeight="300dp" />
+
+</LinearLayout>

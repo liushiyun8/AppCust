@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/tab_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_header_height"
+            android:background="@color/header_title" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:onClick="back"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/header_title"
+                android:text="私盘登记"
+                android:textColor="@color/header"
+                android:textSize="@dimen/tab_header_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_sp_history"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="14dip"
+                android:src="@drawable/icon_history" />
+        </RelativeLayout>
+
+        <com.eke.cust.PagerSlidingTabStrip
+            android:id="@+id/pagertab"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/rl_header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorHeight="1dp"
+            app:pstsShouldExpand="true"
+            app:pstsUnderlineColor="@color/tab_normal"
+            app:pstsUnderlineHeight="1dp"
+            app:selectedTabTextColor="@color/red" />
+
+        <LinearLayout
+            android:id="@+id/sipan_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical"
+                android:paddingBottom="10dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="3dip"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip" >
+
+                        <RadioGroup
+                            android:id="@+id/rg_zushou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_sipandengji_border"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:id="@+id/rb_chuzu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_rb"
+                                android:checked="true"
+                                android:text="出租"
+                                android:textColor="@color/custom_grey"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:id="@+id/rb_chushou"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:button="@drawable/custom_rb"
+                                android:text="出售"
+                                android:textColor="@color/custom_grey"
+                                android:textSize="12sp" />
+                        </RadioGroup>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip" >
+
+                            <LinearLayout
+                                android:id="@+id/layout_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <EditText
+                                    android:id="@+id/et_dong"
+                                    android:layout_width="70dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/bg_sipandengji_rect_border"
+                                    android:gravity="center"
+                                    android:hint="栋/座"
+                                    android:inputType="text"
+                                    android:textColor="@color/custom_grey"
+                                    android:textSize="10sp" />
+
+                                <EditText
+                                    android:id="@+id/et_fanghao"
+                                    android:layout_width="70dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dip"
+                                    android:background="@drawable/bg_sipandengji_rect_border"
+                                    android:gravity="center"
+                                    android:hint="房号"
+                                    android:inputType="text"
+                                    android:textColor="@color/custom_grey"
+                                    android:textSize="10sp" />
+
+                                <EditText
+                                    android:id="@+id/et_size"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dip"
+                                    android:background="@drawable/bg_sipandengji_rect_border"
+                                    android:gravity="center"
+                                    android:hint="平米"
+                                    android:inputType="number"
+                                    android:textColor="@color/custom_grey"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/et_yuezuphone"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/layout_info"
+                                android:layout_marginTop="5dip"
+                                android:background="@drawable/bg_sipandengji_rect_border"
+                                android:digits="0123456789"
+                                android:gravity="center"
+                                android:maxLength="11"
+                                android:hint="业主手机号"
+                                android:inputType="phone"
+                                android:textColor="@color/custom_grey"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/tab_normal" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_chuzu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_yuezujin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="月付"
+                            android:textColor="@color/custom_grey"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_yuefu"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dip"
+                            android:layout_toRightOf="@id/tv_yuezujin"
+                            android:background="@drawable/bg_sipandengji_rect_border"
+                            android:digits=".0123456789"
+                            android:gravity="center"
+                            android:hint="金额"
+                            android:textColor="@color/custom_grey"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/layout1"
+                        android:layout_below="@id/layout1"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_shoufu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="首付"
+                                android:textColor="@color/custom_grey"
+                                android:textSize="12sp" />
+
+                            <EditText
+                                android:id="@+id/et_shoufu"
+                                android:layout_width="70dip"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dip"
+                                android:layout_toRightOf="@id/tv_shoufu"
+                                android:background="@drawable/bg_sipandengji_rect_border"
+                                android:digits=".0123456789"
+                                android:gravity="center"
+                                android:hint="金额"
+                                android:textColor="@color/custom_grey"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout1"
+                            android:layout_toRightOf="@id/layout2"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_yajin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dip"
+                                android:gravity="center"
+                                android:text="压 金"
+                                android:textColor="@color/custom_grey"
+                                android:textSize="12sp" />
+
+                            <EditText
+                                android:id="@+id/et_yajin"
+                                android:layout_width="70dip"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dip"
+                                android:layout_toRightOf="@id/tv_yajin"
+                                android:background="@drawable/bg_sipandengji_rect_border"
+                                android:digits=".0123456789"
+                                android:gravity="center"
+                                android:hint="金额"
+                                android:textColor="@color/custom_grey"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_chushow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_shoujia"
+                        android:layout_width="70dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/tv_yuezujin"
+                        android:background="@drawable/bg_sipandengji_rect_border"
+                        android:digits=".0123456789"
+                        android:gravity="center"
+                        android:hint="售价"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="万"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_submit"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="提交"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</LinearLayout>

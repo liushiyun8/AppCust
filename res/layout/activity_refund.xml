@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_house_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10" />
+
+        <TextView
+            android:id="@+id/txt_empname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10"
+            android:text="签约助理" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <TextView
+                android:id="@+id/txt_propertyno"
+                style="@style/mine_item_text_style"
+                android:text="房源编号:" />
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="合同编号:" />
+
+            <TextView
+                android:id="@+id/txt_house_info"
+                style="@style/mine_item_text_style"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="房源信息:" />
+
+            <TextView
+                android:id="@+id/txt_trade"
+                style="@style/mine_item_text_style"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="类     别:" />
+
+            <TextView
+                android:id="@+id/txt_zj_price"
+                style="@style/mine_item_text_style"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="租     金:" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/mine_item_text_style"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:text="已付金额:" />
+
+                <TextView
+                    android:id="@+id/txt_pay_price"
+                    style="@style/mine_item_text_style"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:text=""
+                    android:textColor="@color/white_blue" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_reund_price"
+                style="@style/mine_item_text_style"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:padding="@dimen/dimen_10"
+                android:text="申请退款" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/mine_item_text_style"
+                    android:text="退款原因" />
+
+                <TextView
+                    android:id="@+id/refund_cause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:background="@drawable/shape_white_bg"
+                    android:drawableRight="@drawable/icon_arrow_down"
+                    android:minWidth="150dp"
+                    android:padding="@dimen/dimen_5"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="温馨提示" />
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="@string/pay_hint3" />
+
+        <TextView
+            android:id="@+id/txt_pay_hint2"
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="@string/pay_hint2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/txt_reund"
+            style="@style/refund_text_style"
+            android:layout_weight="1"
+            android:background="@drawable/refund_bg"
+            android:text="申请退款" />
+
+        <TextView
+            android:id="@+id/txt_back"
+            style="@style/refund_text_style"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/back_bg"
+            android:text="返回" />
+
+    </LinearLayout>
+</RelativeLayout>

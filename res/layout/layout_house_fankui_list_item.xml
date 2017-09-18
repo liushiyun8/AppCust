@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="0dip" 
+        android:layout_height="match_parent"
+        android:layout_weight="10" >
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:button="@drawable/custom_checkbox"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <View style="@style/line_vertical_style" />
+
+    <TextView
+        android:id="@+id/tv_baogaoren"
+        style="@style/xianshi_fankui_list_item_style"
+        android:layout_weight="18"
+        android:text="韦大宝\n123456" />
+
+    <View style="@style/line_vertical_style" />
+
+    <TextView
+        android:id="@+id/tv_baogao_time"
+        style="@style/xianshi_fankui_list_item_style"
+        android:layout_weight="18"
+        android:text="报告时间" />
+
+    <View style="@style/line_vertical_style" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/xianshi_fankui_list_item_style"
+        android:layout_weight="36"
+        android:text="内容" />
+
+    <View style="@style/line_vertical_style" />
+
+    <TextView
+        android:id="@+id/tv_fankui_time"
+        style="@style/xianshi_fankui_list_item_style"
+        android:layout_weight="18"
+        android:text="反馈时间" />
+
+</LinearLayout>

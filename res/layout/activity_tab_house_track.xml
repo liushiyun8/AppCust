@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_background1" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_header_height"
+        android:background="@color/header_title" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:onClick="back"
+            android:src="@drawable/arrow_back" />
+        
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip"
+            android:background="@color/header_title"
+            android:text=""
+            android:textColor="@color/header"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:background="@color/header_title"
+            android:text="[星河盛世]"
+            android:textColor="@color/header"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_login_btn"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="提交"
+        android:textColor="#8E7FCC"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_house_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_house_track_source"
+        android:text=""
+        android:textColor="@color/custom_grey"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_above="@id/btn_submit"
+        android:layout_alignLeft="@id/btn_submit"
+        android:layout_alignRight="@id/btn_submit"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/bg_house_track_content"
+        android:gravity="left|top"
+        android:hint="每次跟进, 不得少于6个字。"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textSize="12sp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_changyonggenjin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/bg_house_track_changyonggenjin_normal"
+        android:text="常用跟进"
+        android:textColor="@color/gray_normal"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkbox_layout"
+        android:layout_below="@+id/rl_header"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_house_track_source"
+        android:padding="8dip" >
+
+        <ListView
+            android:id="@+id/listview_msg_genjin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/custom_grey"
+            android:dividerHeight="1dip"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/checkbox_layout"
+        android:layout_above="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:id="@+id/track_cb_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/track_cb_bg"
+            android:text="\@跟房助理"
+            android:textColor="@android:color/background_dark"
+            />
+        <CheckBox
+            android:id="@+id/track_cb_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\@后台"
+            android:layout_marginLeft="20dp"
+            android:button="@drawable/track_cb_bg"
+            android:textColor="@android:color/background_dark"
+            />
+    </LinearLayout>
+</RelativeLayout>

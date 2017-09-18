@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_50"
+    android:background="@color/tab_background1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/grid_view_maidian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/view_line"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_above="@id/btn_confirm"
+            android:layout_marginTop="10dip"
+            android:background="@color/gray_pressed" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_set_emp"
+            android:text="确定"/>
+
+    </LinearLayout>
+<!--android:background="@drawable/bg_maidian_back"-->
+</LinearLayout>

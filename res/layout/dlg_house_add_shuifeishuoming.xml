@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#999999"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+    
+    <Button 
+        android:id="@+id/btn_gefu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:text="各付"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/bg_add_house_kanfangfangshi"/>
+    
+    <Button 
+        android:id="@+id/btn_shide"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:text="实得"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/bg_add_house_kanfangfangshi"/>
+    
+    <Button 
+        android:id="@+id/btn_baoshui"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:text="包税"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/bg_add_house_kanfangfangshi"/>
+    
+    <Button 
+        android:id="@+id/btn_buxiang"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:text="不详"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/bg_add_house_kanfangfangshi"/>
+
+</LinearLayout>

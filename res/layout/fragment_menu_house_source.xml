@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_header_height"
+        android:background="@color/header_title" >
+
+        <ImageView
+            android:id="@+id/iv_sp_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:onClick=""
+            android:src="@drawable/top_right_setting" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/header_title"
+            android:text="房源列表"
+            android:textColor="@color/header"
+            android:textSize="@dimen/tab_header_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/custom_grey" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="10dip"
+                android:paddingTop="8dip" >
+
+                <ImageView
+                    android:id="@+id/iv_rent_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_green" />
+
+                <TextView
+                    android:id="@+id/tv_rent_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="出租0套"
+                    android:textColor="@color/custom_grey"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/custom_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/ll_rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <com.handmark.pulltorefresh.library.PullToRefreshListView
+                        android:id="@+id/listview_main_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@null"
+                        android:divider="@color/gray_pressed"
+                        android:dividerHeight="1dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sell"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="8dip"
+                        android:paddingLeft="12dip"
+                        android:paddingRight="10dip"
+                        android:paddingTop="8dip" >
+
+                        <ImageView
+                            android:id="@+id/iv_sell_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/arrow_green" />
+
+                        <TextView
+                            android:id="@+id/tv_sell_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="出售0套"
+                            android:textColor="@color/custom_grey"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/custom_grey" />
+
+                    <com.handmark.pulltorefresh.library.PullToRefreshListView
+                        android:id="@+id/listview_main_sell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@null"
+                        android:divider="@color/gray_pressed"
+                        android:dividerHeight="1dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/sv_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tab_background"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/custom_grey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="8dip"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="8dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_rent_arrow_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_green" />
+
+                    <TextView
+                        android:id="@+id/tv_rent_num_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="出租0套"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/custom_grey" />
+
+                <com.eke.views.ListViewForScrollView
+                    android:id="@+id/listview_main_rent_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@null"
+                    android:divider="@color/gray_pressed"
+                    android:dividerHeight="1dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/custom_grey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="8dip"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="8dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_sell_arrow_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_green" />
+
+                    <TextView
+                        android:id="@+id/tv_sell_num_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="出售0套"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/custom_grey" />
+
+                <com.eke.views.ListViewForScrollView
+                    android:id="@+id/listview_main_sell_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@null"
+                    android:divider="@color/gray_pressed"
+                    android:dividerHeight="1dip" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

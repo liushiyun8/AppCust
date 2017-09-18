@@ -1,0 +1,182 @@
+[
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\imagepicker_pop_slide_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\imagepicker_pop_slide_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\right_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\right_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\top_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\top_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\left_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\left_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\bottom_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\bottom_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\dialogui_enter_center.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\dialogui_enter_center.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\imagepicker_actionbar_dismiss.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\imagepicker_actionbar_dismiss.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\hide_to_bottom.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\hide_to_bottom.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\fade_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\imagepicker_bottom_show.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\imagepicker_bottom_show.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\top_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\top_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\dialogui_exit.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\dialogui_exit.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\dialogui_enter.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\dialogui_enter.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\rotate_down.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\rotate_down.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\design_fab_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\show_from_bottom.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\show_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\design_fab_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\fade_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\imagepicker_pop_slide_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\imagepicker_pop_slide_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\glide_fade_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\glide_fade_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\imagepicker_bottom_dismiss.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\imagepicker_bottom_dismiss.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\rotate_up.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\rotate_up.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\toast_exit.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\toast_exit.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\imagepicker_actionbar_show.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\imagepicker_actionbar_show.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\scale_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\scale_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\toast_enter.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\toast_enter.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\scale_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\scale_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\dialogui_exit_center.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\dialogui_exit_center.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\left_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\left_out.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\right_in.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\right_in.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\release\\anim\\bottom_out.xml",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\src\\main\\res\\anim\\bottom_out.xml"
+    }
+]

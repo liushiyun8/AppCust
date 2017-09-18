@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#9c9c9d"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/tv_gonggong"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="小区公共"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_wuye"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="房源物业"
+            android:textColor="#8e8e8e"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager_gonggong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation"
+            android:visibility="visible" />
+
+        <com.eke.cust.chat.widget.photoview.EasePhotoView
+            android:id="@+id/iv_photo_gongogn_one_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager_wuye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/iv_jiucuo"
+            android:layout_width="25dip"
+            android:layout_height="35dip"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:src="@drawable/jiu" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="80dip"
+            android:gravity="center"
+            android:text="0/0"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_set"
+        android:layout_width="90dip"
+        android:layout_height="30dip"
+        android:background="@drawable/bg_genjin_del"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="设为封面"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RangeSeekBar">
+        <!-- the minimum of the range -->
+        <attr name="absoluteMinValue" format="integer|float" />
+
+        <!-- the maximum of the range -->
+        <attr name="absoluteMaxValue" format="integer|float" />
+
+        <!-- show a single slider -->
+        <attr name="singleThumb" format="boolean" />
+
+        <!-- show the labels on the right and left-->
+        <attr name="showLabels" format="boolean" />
+
+        <!-- alwaysActive will make the buttons and bar always draw as the activeColor (the default is false) -->
+        <attr name="alwaysActive" format="boolean" />
+
+        <!-- show the currently selected value above each thumb (defaults to true) -->
+        <attr name="valuesAboveThumbs" format="boolean" />
+
+        <!-- padding on either side on the slider -->
+        <attr name="internalPadding" format="dimension" />
+
+        <!-- the height of the bar -->
+        <attr name="barHeight" format="dimension" />
+
+        <!-- the color of the bar that is not selected -->
+        <attr name="defaultColor" format="color" />
+
+        <!-- the color of the bar that is selected -->
+        <attr name="activeColor" format="color" />
+
+        <!-- the color of the text above thumbs -->
+        <attr name="textAboveThumbsColor" format="color" />
+
+        <!-- set drawables for thumb handles -->
+        <attr name="thumbNormal" format="reference" />
+        <attr name="thumbPressed" format="reference" />
+        <attr name="thumbDisabled" format="reference" />
+
+        <!-- thumb shadow specifications -->
+        <attr name="thumbShadow" format="boolean" />
+        <attr name="thumbShadowColor" format="color" />
+        <attr name="thumbShadowXOffset" format="dimension" />
+        <attr name="thumbShadowYOffset" format="dimension" />
+        <attr name="thumbShadowBlur" format="dimension" />
+
+        <!-- to activate the thumbs and texts when the min and max values are the default ones (defaults to false) -->
+        <attr name="activateOnDefaultValues" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ProperRatingBar" >
+
+        <!-- Total number of ticks to show. Default is '5' -->
+        <attr name="prb_totalTicks" format="integer" />
+
+        <!-- Use this to set rating from xml. Default is '3' -->
+        <attr name="prb_defaultRating" format="integer" />
+
+        <!-- If set to 'true' - use will be able to change rating by clicking. Default is 'false' -->
+        <attr name="prb_clickable" format="boolean" />
+
+
+        <!-- Symbol to be used as a tick. Default is '$' -->
+        <attr name="prb_symbolicTick" format="string" />
+
+        <!-- Text size of symbolic tick. Default is '15sp' -->
+        <attr name="android:textSize" />
+
+        <!-- Text style of symbolic tick. Possible: 'bold', 'italic', 'normal'. Default is 'normal'. -->
+        <attr name="android:textStyle" />
+
+        <!-- Color of symbolic tick that is not selected (not rated). Default is '#FF000000' (black). -->
+        <attr name="prb_symbolicTickNormalColor" format="reference|color" />
+
+        <!-- Color of symbolic tick that is selected (rated). Default is '#FF888888' (gray). -->
+        <attr name="prb_symbolicTickSelectedColor" format="reference|color" />
+
+
+        <!-- Drawable resource to use as a tick that is not selected (not rated). No default value. -->
+        <attr name="prb_tickNormalDrawable" format="reference" />
+
+        <!-- Drawable resource to use as a tick that is selected (rated). No default value. -->
+        <attr name="prb_tickSelectedDrawable" format="reference" />
+
+        <!-- Margin to be applied to tick drawables. Only applies to drawable-type ticks. Default is '1dp' (gray). -->
+        <attr name="prb_tickSpacing" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ImageMarqueeView">
+        <attr name="image_src" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_animator" format="reference"/>
+        <attr name="ci_animator_reverse" format="reference"/>
+        <attr name="ci_drawable" format="reference"/>
+        <attr name="ci_drawable_unselected" format="reference"/>
+
+        <attr name="ci_orientation" format="enum">
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0"/>
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1"/>
+        </attr>
+
+        <attr name="ci_gravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30"/>
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50"/>
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03"/>
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05"/>
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10"/>
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70"/>
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01"/>
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07"/>
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11"/>
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77"/>
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the vertical gravity: a top gravity will clip the bottom
+            edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80"/>
+            <!-- Additional option that can be set to have the left and/or right edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the horizontal gravity: a left gravity will clip the right
+            edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08"/>
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003"/>
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005"/>
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference" />
+        <attr name="assetName" format="string" />
+        <attr name="panEnabled" format="boolean" />
+        <attr name="zoomEnabled" format="boolean" />
+        <attr name="quickScaleEnabled" format="boolean" />
+        <attr name="tileBackgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="GifTextureView">
+        <attr name="gifSource" format="reference|string" />
+        <attr name="isOpaque" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="freezesAnimation" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabTextMinWidth" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="color" />
+        <attr name="selectedTabBackground" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_shadow" format="boolean" />
+        <attr name="fab_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--广告轮询-->
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension"/>
+        <attr name="minHeight" format="dimension" />
+        <attr name="maxHeight" format="dimension"/>
+        <attr name="indicatorName" format="string"/>
+        <attr name="indicatorColor" format="color"/>
+    </declare-styleable>
+</resources>

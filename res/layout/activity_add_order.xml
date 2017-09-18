@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_house_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/txt_propertyno"
+            style="@style/mine_item_text_style"
+            android:text="房源编号:" />
+
+        <TextView
+            android:id="@+id/txt_empname"
+            style="@style/mine_item_text_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="签约助理:" />
+        <TextView
+            android:id="@+id/txt_house_info"
+            style="@style/mine_item_text_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="房源信息:" />
+        <TextView
+            android:id="@+id/txt_trade"
+            style="@style/mine_item_text_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="类     别:" />
+
+        <TextView
+            android:id="@+id/txt_zj_price"
+            style="@style/mine_item_text_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="租     金:" />
+
+        <TextView
+            android:id="@+id/txt_sf_price"
+            style="@style/mine_item_text_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="首     付:" />
+
+        <TextView
+            android:id="@+id/txt_yj_price"
+            style="@style/mine_item_text_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="押    金:" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="总计应付:" />
+
+            <TextView
+                android:id="@+id/txt_pay_price"
+                style="@style/mine_item_text_style"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text=""
+                android:textColor="@color/white_blue" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:background="@color/green"
+            android:padding="@dimen/dimen_10"
+            android:text="提交下单"
+            android:id="@+id/bt_submit_order"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/mine_item_text_style"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="支付提示" />
+
+    <TextView
+        style="@style/mine_item_text_style"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:text="@string/pay_hint1" />
+
+    <TextView
+        android:id="@+id/txt_pay_hint2"
+        style="@style/mine_item_text_style"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:text="@string/pay_hint2" />
+
+    <TextView
+        style="@style/mine_item_text_style"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:text="合同细节:" />
+    <TextView
+        style="@style/mine_item_text_style"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:text="依双方简述的正式合同为准。" />
+</LinearLayout>

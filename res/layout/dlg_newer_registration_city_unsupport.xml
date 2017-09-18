@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="15dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip"
+     >
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        android:text="您所在的城市暂未开通业务,\n谢谢您的关注.\n如需帮助请致电40012345678"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="30dip"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="@drawable/bg_new_registration_dlg_btn" />
+
+</RelativeLayout>

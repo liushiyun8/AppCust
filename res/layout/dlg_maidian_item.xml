@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_maidian"
+        style="@style/black_text_style"
+        android:background="@drawable/bg_maidian_item"
+        android:gravity="center"
+        android:minWidth="@dimen/dimen_150"
+        android:lines="1"
+        android:ellipsize="end"
+        android:padding="@dimen/dimen_10" />
+
+</LinearLayout>

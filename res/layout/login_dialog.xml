@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_10"
+    android:layout_marginRight="@dimen/dimen_10"
+    android:background="@drawable/bg_login"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/logo_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:background="@drawable/login_et_bg">
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@drawable/login_phone_bg"
+            android:contentDescription="@string/call_duration"
+            android:scaleType="center"
+            android:src="@drawable/icon_phone" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            style="@style/edit_style"
+            android:layout_toRightOf="@id/iv_phone"
+            android:digits="0123456789"
+            android:hint="@string/login_input_phone"
+            android:inputType="phone"
+            android:maxLength="13" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_et_bg">
+
+            <ImageView
+                android:id="@+id/iv_password"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@drawable/login_phone_bg"
+                android:contentDescription="@string/call_duration"
+                android:scaleType="center"
+                android:src="@drawable/icon_password" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                style="@style/edit_style"
+                android:layout_toRightOf="@id/iv_password"
+                android:hint="登录密码"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:lines="1" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_forget_password"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_down" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:gravity="center"
+                android:text="忘记密码？"
+                android:textColor="#000066" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_message_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_et_bg">
+
+            <ImageView
+                android:id="@+id/iv_message_code"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@drawable/login_phone_bg"
+                android:contentDescription="@string/call_duration"
+                android:scaleType="center"
+                android:src="@drawable/icon_message" />
+
+            <EditText
+                android:id="@+id/edt_message_code"
+                style="@style/edit_style"
+                android:layout_toRightOf="@id/iv_message_code"
+                android:digits="0123456789"
+                android:hint="填写验证码"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="6" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_send_message_code"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/shape_get_message_code"
+            android:gravity="center"
+            android:text="验证码"
+            android:textSize="12sp"
+            android:textColor="@color/get_message_code_text_color" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_login"
+        style="@style/login_bt_style"
+        android:enabled="false"
+        android:text="@string/bt_login" />
+    <Button
+        android:id="@+id/bt_forget_password"
+        style="@style/forget_bt_style"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="@string/bt_forget_password" />
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dip"
+    android:soundEffectsEnabled="false">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.eke.cust.widget.convenientbanner.ConvenientBanner
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_house_push"
+                    style="@style/info_text_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/bg_slash"
+                    android:text="新盘推送" />
+
+                <com.eke.cust.widget.GridViewForScrollView
+                    android:id="@+id/list_housepush"
+                    style="@style/CustomListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_house_push"
+                    android:background="@color/little_yellow"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="2"
+                    android:padding="5dp"
+                    android:verticalSpacing="5dp"></com.eke.cust.widget.GridViewForScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_mymsg"
+                    style="@style/info_text_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/bg_slash"
+                    android:text="我的消息" />
+
+                <FrameLayout
+                    android:id="@+id/message_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_mymsg"
+                    android:background="@color/little_yellow"
+                    android:minHeight="200dp"></FrameLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_news"
+                    style="@style/info_text_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/bg_slash"
+                    android:text="新闻公告" />
+
+                <com.eke.cust.widget.ListViewForScrollView
+                    android:id="@+id/list_news"
+                    style="@style/CustomListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_news"
+                    android:divider="@color/tab_background"
+                    android:dividerHeight="2dip" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_banner"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/adv_bg" />
+
+            <ImageView
+                android:id="@+id/iv_banner1"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="10dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_house_source" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/program.jar')
+    compile 'com.android.support:multidex:1.0.0'
+    compile files('libs/org.apache.http.legacy.jar')
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    //图片处理
+    compile 'org.nmdp.gl:gl:1.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_100"
+            android:orientation="vertical"
+            android:background="#ffff66">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/iv_house1"
+                    android:src="@drawable/icon_house1"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/iv_house2"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:src="@drawable/icon_house2"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/iv_house3"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:src="@drawable/icon_house3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/iv_house4"
+                    android:src="@drawable/icon_house4"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/iv_house5"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:src="@drawable/icon_house5"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/iv_house6"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:src="@drawable/icon_empty"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_photo"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:src="@drawable/select_pic_down_bg" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@drawable/share_inupt_bg">
+
+            <ImageView
+                android:id="@+id/iv_house_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/dimen_10"
+                android:src="@drawable/icon_default" />
+
+            <EditText
+                android:id="@+id/edt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_house_image"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/iv_house_image"
+                android:background="@drawable/shape_white_bg"
+                android:padding="@dimen/dimen_5"
+                android:text="亲们~~有合适的租客帮忙推荐下哟！"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_title"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_house_image"
+                android:background="@drawable/shape_white_bg"
+                android:gravity="top|left"
+                android:minHeight="100dp"
+                android:padding="@dimen/dimen_5"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dimen_10">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <foundation.widget.imageview.CheckableImageView
+                        android:id="@+id/iv_wechatmoments"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:button="@null"
+                        android:background="@drawable/share_item_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_5"
+                        android:src="@drawable/icon_wechatmoments" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <foundation.widget.imageview.CheckableImageView
+                        android:id="@+id/iv_wechat"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:button="@null"
+                        android:background="@drawable/share_item_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_5"
+                        android:src="@drawable/icon_wechat" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <foundation.widget.imageview.CheckableImageView
+                        android:id="@+id/iv_shortmessage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:button="@null"
+                        android:background="@drawable/share_item_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_5"
+                        android:src="@drawable/icon_shortmessage" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_20"
+            android:background="@drawable/share_bt_bg"
+            android:padding="@dimen/dimen_10"
+            android:text="分享"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

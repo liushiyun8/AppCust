@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pop_backc_color_down">
+
+
+    <ListView
+        android:id="@+id/recycleview"
+        style="@style/CustomListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@color/black"
+        android:dividerHeight="1dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/edt_content"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:lines="1"
+            android:background="@drawable/shape_close_conversation_bg"
+            android:padding="@dimen/dimen_5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dimen_10"
+            android:id="@+id/iv_search"
+            android:src="@drawable/icon_sarch_emp"/>
+    </LinearLayout>
+
+</LinearLayout>

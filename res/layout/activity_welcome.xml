@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bg_layout" >
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/webview"/>
+
+    <ImageView
+        android:layout_width="200dip"
+        android:layout_height="100dip"
+        android:layout_above="@+id/result"
+        android:visibility="gone"
+        android:contentDescription="@string/copyright"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/u28" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dip"
+        android:visibility="gone"
+        android:text="@string/copyright" />
+
+</RelativeLayout>

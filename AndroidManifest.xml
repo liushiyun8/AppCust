@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eke.cust"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.1.2">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.eke.cust.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".launch.GuideActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.activity"
+           >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 开机引导 -->
+        <activity
+            android:name=".launch.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.activity"
+            />
+        <!-- 登录 -->
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tabmore.camera_activity.CameraActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           
+
+            />
+        <activity
+            android:name=".tabinfo.track_activity.TrackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabinfo.colleague_activity.ColleagueActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabinfo.recentdeal_activity.RecentDealActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.house_search_activity.HouseSearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.HouseDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.key_manage_activity.KeyManageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.backend_info_activity.BackendInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.track_activity.HouseTrackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.wokechengjiao_activity.WoKeChengJiaoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.upload_activity.UploadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.error_report_activity.ErrorReportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.house_register_activity.house_add.HouseDengJiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog"
+            />
+        <activity
+            android:name=".tabhouse.image_viewer_activity.ImageViewerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.view_image_activity.ViewImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.view_image_activity.ImgClipZoomFengMianActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.imagepage.ImagePagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.xianshifankui_activity.XianshifankuiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.sipandengji_activity.SiPanDengJiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.profile_activity.ProfileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.profile_activity.DaiLiLouPanActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.profile_activity.ImgClipZoomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.profile_activity.DaiLiChongZhiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.mytask_activity.MytaskActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.collect.MineCollectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.contract.MineContractActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.mytask_activity.MytaskDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.safty_activity.SaftyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.safty_activity.FanyongActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.safty_activity.PwSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.deal_activity.DealListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.beiyong_activity.OnGoingListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.house_register_activity.HouseRegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.house_register_activity.house_add.HouseHistoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabinfo.news_activity.NewsListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabinfo.news_activity.NewsDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.house_register_activity.HeZuoXieYiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.OperatingHouseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.help_activity.HelpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.camera_activity.LocalImagePreviewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.camera_activity.LocalImagePreviewActivityNew"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.feedback_activity.FeedbackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.barcode_activity.BarcodeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.about_activity.AboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.share.ShareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".chat.ConversationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".chat.ChatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.chayicha_activity.ChayichaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.cehuizhushou_activity.CHZSActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.cehuizhushou_activity.CHHistoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.barcode_activity.WechatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmore.loc_collect_activity.LocCollectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+           />
+
+        <!-- 开机自启动服务 -->
+        <receiver android:name=".chat.receiver.StartServiceReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的appkey ekeae#ekeae -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="ekeae#ekeae" />
+
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="YyKLNrqsvu340vENyyhucQqzIxTU2suk" />
+
+        <!-- yours -->
+        <!--
+             <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="mC6u4hTZzk3CGY0uwdoKjhTb" />
+        -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".tabmine.profile_activity.ChongzhiNotFindActivity" />
+        <activity
+            android:name=".tabmine.EntrustActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.account_activity.MyAccountActivity"
+            android:label="@string/title_activity_my_account"
+           />
+        <activity
+            android:name=".tabmine.account_activity.AccountDetailActivity"
+            android:label="@string/title_activity_account_detail"
+           />
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".tabhouse.FindConditionsActivity"
+            android:screenOrientation="portrait"
+           />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57936127e0f55a56ee004c5f" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ceshi" />
+
+        <activity
+            android:name=".tabhouse.FindHouseResultActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.RentalHouseActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabmine.EditUserInfoActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.activity_order.AddOrderActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.activity_order.PayOrderActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".tabhouse.activity_order.RefundActivity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".share.platform.weixing.AssistActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <!-- 支付宝支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name=".tabmore.house_register_activity.HousePictureActivity"></activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <!-- bugly 更新配置-->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.eke.cust.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <!-- bugly 更新配置结束-->
+    </application>
+
+</manifest>

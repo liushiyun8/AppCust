@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6b6b6b"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/recycleview"
+        style="@style/CustomListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#bcbcbc"
+        android:dividerHeight="1dip" />
+
+
+</LinearLayout>

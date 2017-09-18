@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_header_height"
+        android:background="@color/header_title" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:onClick="back"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/header_title"
+            android:text="代理重置"
+            android:textColor="@color/header"
+            android:textSize="@dimen/tab_header_text_size" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/dailichongzhi_commit_bg"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="确认"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_daili_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/dailichongzhi_edit_bg" >
+
+        <TextView
+            android:id="@+id/tv_daili_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="代理楼盘：0/0"
+            android:textColor="@color/custom_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_daili_can_not_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="找不到？"
+            android:textColor="#000066"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/chongzhi_loupan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/tv_daili_num"
+            android:layout_alignRight="@+id/tv_daili_can_not_find"
+            android:layout_below="@+id/tv_daili_num"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dailichongzhi_edit_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_submit"
+        android:layout_below="@id/rl_daili_top"
+        android:layout_margin="10dp"
+        android:background="@drawable/dailichongzhi_edit_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+
+            <TextView
+                android:id="@+id/chongzhi_quxian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="区县"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="#a1a1a1" />
+
+            <TextView
+                android:id="@+id/chongzhi_pianqu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="片区"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:src="#a1a1a1" />
+
+            <EditText
+                android:id="@+id/et_content_find"
+                android:layout_width="0dip"
+                android:layout_height="26dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="4"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="请输入楼盘名称"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="12sp" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/chongzhi_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/search_icon" />
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listview_loupan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null" />
+    </LinearLayout>
+
+</RelativeLayout>

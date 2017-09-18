@@ -1,0 +1,59 @@
+<resources>
+
+    <dimen name="week_top_margin">74px</dimen>
+    <dimen name="week_left_margin">40px</dimen>
+    <dimen name="cell_width">58px</dimen>
+    <dimen name="cell_heigh">53px</dimen>
+    <dimen name="cell_margin_top">92px</dimen>
+    <dimen name="cell_margin_left">39px</dimen>
+    <dimen name="cell_text_size">26px</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="tab_header_height">40dp</dimen>
+    <dimen name="tab_header_text_size">20sp</dimen>
+    <dimen name="add_fangyuan_text_size">12sp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="chat_nick_text_size">13sp</dimen>
+
+    <dimen name="chat_nick_margin_left">17dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_75">75dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_18">18sp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_0">0.5dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="fab_elevation_lollipop">8dp</dimen>
+    <dimen name="fab_press_translation_z">6dp</dimen>
+    <dimen name="prb_symbolic_tick_default_text_size">15sp</dimen>
+    <dimen name="prb_drawable_tick_default_spacing">1dp</dimen>
+    <dimen name="toolbar_padding_top">24dp</dimen>
+
+    <dimen name="normal_text_size">14sp</dimen>
+    <dimen name="dimen_sp_20">20sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+
+</resources>

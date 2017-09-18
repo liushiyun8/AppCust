@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.8"
+    android:background="#ffffe1">
+    
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group"
+        android:orientation="horizontal" >
+        
+        <RadioButton
+            android:id="@+id/rb_menu_info"
+            style="@style/home_fragment_tab_rb"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/menu_tab_info_selector"
+            android:text="资讯"/>
+            
+        <RadioButton
+            android:id="@+id/rb_menu_house_source"
+            style="@style/home_fragment_tab_rb"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/menu_tab_source_selector"
+            android:text="找房"/>
+            
+        <RadioButton
+            android:id="@+id/rb_menu_mine"
+            style="@style/home_fragment_tab_rb"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            android:drawableTop="@drawable/menu_tab_mine_selector"
+            android:text="我的"/>
+        <RadioButton
+            android:id="@+id/rb_menu_entrust"
+            style="@style/home_fragment_tab_rb"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/menu_tab_entrust_selector"
+            android:text="委托"/>
+
+        <RadioButton
+            android:id="@+id/rb_menu_more"
+            style="@style/home_fragment_tab_rb"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/menu_tab_more_selector"
+            android:text="更多"/>
+    </RadioGroup>
+    
+</LinearLayout>

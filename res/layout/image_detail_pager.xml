@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_nav">
+        <ImageView
+            android:id="@+id/iv_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:src="@drawable/camera_back"
+            android:padding="@dimen/dimen_10" />
+        <ImageView
+            android:id="@+id/iv_jiucuo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dimen_10"
+            android:src="@drawable/icon_feed_back" />
+    </RelativeLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#9c9c9d"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+        <RadioButton
+            android:id="@+id/radio_gonggong"
+            style="@style/image_page_radio_style"
+            android:checked="true"
+            android:text="小区公共" />
+
+        <RadioButton
+            android:id="@+id/radio_wuye"
+            style="@style/image_page_radio_style"
+            android:text="房源物业" />
+    </RadioGroup>
+
+    <com.eke.cust.widget.HackyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_nav"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/title_back"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txt_point"/>
+</RelativeLayout>

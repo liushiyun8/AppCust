@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="快速查找"
+        android:textColor="#bcbcbc"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:textSize="12sp" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#cccccc"/>
+
+    <ListView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:divider="#bcbcbc"
+        android:dividerHeight="1dip" />
+
+</LinearLayout>

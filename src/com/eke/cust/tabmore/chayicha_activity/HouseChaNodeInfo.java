@@ -1,0 +1,138 @@
+package com.eke.cust.tabmore.chayicha_activity;
+
+public class HouseChaNodeInfo {
+	private String propertyid;
+	private String estatename;
+	private String roomno;
+	private String buildno;
+	private String trade;
+	private double rentprice;
+	private double price;
+	private String unitname;
+	private String rentunitname;
+	private String propertyno;
+	private String countf;
+	private String countt;
+	private String countw;
+	private String county;
+	private double square;
+	private long handoverdate;
+	private String remark;
+	private String propertydirection;
+	private String propertyfurniture;
+	
+	public String getPropertyid() {
+		return propertyid;
+	}
+	public void setPropertyid(String propertyid) {
+		this.propertyid = propertyid;
+	}
+	public String getEstatename() {
+		return estatename;
+	}
+	public void setEstatename(String estatename) {
+		this.estatename = estatename;
+	}
+	public String getRoomno() {
+		return roomno;
+	}
+	public void setRoomno(String roomno) {
+		this.roomno = roomno;
+	}
+	public String getBuildno() {
+		return buildno;
+	}
+	public void setBuildno(String buildno) {
+		this.buildno = buildno;
+	}
+	public String getTrade() {
+		return trade;
+	}
+	public void setTrade(String trade) {
+		this.trade = trade;
+	}
+	public double getRentprice() {
+		return rentprice;
+	}
+	public void setRentprice(double rentprice) {
+		this.rentprice = rentprice;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public String getUnitname() {
+		return unitname;
+	}
+	public void setUnitname(String unitname) {
+		this.unitname = unitname;
+	}
+	public String getRentunitname() {
+		return rentunitname;
+	}
+	public void setRentunitname(String rentunitname) {
+		this.rentunitname = rentunitname;
+	}
+	public String getPropertyno() {
+		return propertyno;
+	}
+	public void setPropertyno(String propertyno) {
+		this.propertyno = propertyno;
+	}
+	public String getCountf() {
+		return countf;
+	}
+	public void setCountf(String countf) {
+		this.countf = countf;
+	}
+	public String getCountt() {
+		return countt;
+	}
+	public void setCountt(String countt) {
+		this.countt = countt;
+	}
+	public String getCountw() {
+		return countw;
+	}
+	public void setCountw(String countw) {
+		this.countw = countw;
+	}
+	public String getCounty() {
+		return county;
+	}
+	public void setCounty(String county) {
+		this.county = county;
+	}
+	public double getSquare() {
+		return square;
+	}
+	public void setSquare(double square) {
+		this.square = square;
+	}
+	public long getHandoverdate() {
+		return handoverdate;
+	}
+	public void setHandoverdate(long handoverdate) {
+		this.handoverdate = handoverdate;
+	}
+	public String getRemark() {
+		return remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	public String getPropertydirection() {
+		return propertydirection;
+	}
+	public void setPropertydirection(String propertydirection) {
+		this.propertydirection = propertydirection;
+	}
+	public String getPropertyfurniture() {
+		return propertyfurniture;
+	}
+	public void setPropertyfurniture(String propertyfurniture) {
+		this.propertyfurniture = propertyfurniture;
+	}
+}

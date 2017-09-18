@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/msg_item_hang"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/message_itemback"
+        android:orientation="horizontal" >
+
+        <foundation.widget.imageview.CircleImageView
+            android:id="@+id/msg_item_title"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/kefu" >
+        </foundation.widget.imageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/msg_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="客服"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_header_height"
+        android:background="@color/header_title" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:onClick="back"
+            android:src="@drawable/arrow_back" />
+        
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip"
+            android:background="@color/header_title"
+            android:text="限时反馈"
+            android:textColor="@color/header"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:background="@color/header_title"
+            android:text="11111111"
+            android:textColor="@color/header"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header"
+        android:background="#c9d164"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/xianshi_fankui_style"
+            android:layout_weight="10" />
+
+        <View
+            style="@style/line_vertical_style" />
+
+        <TextView
+            style="@style/xianshi_fankui_style"
+            android:layout_weight="18"
+            android:text="报告人" />
+
+        <View
+            style="@style/line_vertical_style" />
+
+        <TextView
+            style="@style/xianshi_fankui_style"
+            android:layout_weight="18"
+            android:text="报告时间" />
+
+        <View
+            style="@style/line_vertical_style" />
+        
+        <TextView
+            style="@style/xianshi_fankui_style"
+            android:layout_weight="36"
+            android:text="内容" />
+
+        <View
+            style="@style/line_vertical_style" />
+        
+        <TextView
+            style="@style/xianshi_fankui_style"
+            android:layout_weight="18"
+            android:text="反馈时限" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_login_btn"
+        android:onClick="SendClicked"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="提交反馈"
+        android:textColor="#8E7FCC"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="wrap_content"
+        android:layout_height="120dip"
+        android:layout_above="@id/btn_submit"
+        android:layout_alignLeft="@id/btn_submit"
+        android:layout_alignRight="@id/btn_submit"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/bg_house_track_content"
+        android:gravity="left|top"
+        android:hint="反馈信息不少于6个字。"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textSize="12sp" >
+    </EditText>
+    
+    <ListView
+        android:id="@+id/listview_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_below="@id/ll_title"
+        android:layout_above="@id/et_content"
+        android:layout_marginBottom="3dip"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#bcbcbc"
+        android:dividerHeight="1dip"
+        android:listSelector="@color/transparent" />
+
+</RelativeLayout>

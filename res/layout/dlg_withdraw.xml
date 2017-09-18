@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2999999" >
+
+    <LinearLayout
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_global_genfang"
+        android:orientation="vertical"
+        android:paddingBottom="6dip"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip" >
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_house_flitr_dlg_filter"
+            android:gravity="center"
+            android:hint="提现金额"
+            android:inputType="number"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_house_flitr_dlg_filter"
+            android:gravity="center"
+            android:hint="登录密码"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/bg_daikan_btn_disabled"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip"
+            android:text="提交"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:id="@+id/edit_content"
+        android:padding="@dimen/dimen_5"
+        android:layout_margin="@dimen/dimen_20"
+        android:background="@drawable/shape_white_bg"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_save"
+        style="@style/mine_save_bt_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:text="保存"/>
+
+</RelativeLayout>

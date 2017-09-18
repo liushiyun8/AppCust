@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_header_height"
+        android:background="@color/header_title" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:onClick="back"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/header_title"
+            android:text="返佣账户"
+            android:textColor="@color/header"
+            android:textSize="@dimen/tab_header_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="40dip"
+            android:background="@color/custom_grey1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip" >
+
+            <EditText
+                android:id="@+id/et_real_name"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_sipandengji_rect_border"
+                android:gravity="center"
+                android:hint="收款人姓名"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_shenfenzheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/et_real_name"
+                android:background="@drawable/bg_sipandengji_rect_border"
+                android:gravity="center"
+                android:hint="身份证号码"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            
+            <TextView
+                android:id="@+id/tv_fangshi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_shenfenzheng"
+                android:layout_alignLeft="@id/et_shenfenzheng"
+                android:layout_alignRight="@id/et_shenfenzheng"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/bg_sipandengji_rect_border"
+                android:gravity="center"
+                android:drawableRight="@drawable/daili_arrow_down"
+                android:text="选择方式"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            
+            <EditText
+                android:id="@+id/et_shoukuan_zhanghao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_fangshi"
+                android:layout_alignLeft="@id/tv_fangshi"
+                android:layout_alignRight="@id/tv_fangshi"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/bg_sipandengji_rect_border"
+                android:gravity="center"
+                android:hint="收款账号"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/custom_grey1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:orientation="horizontal"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="15dip" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@color/transparent" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="120dip"
+                        android:background="@drawable/bg_shenfenzheng" />
+
+                    
+
+                    <ImageView
+                        android:id="@+id/iv_shenfenzheng_zheng"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_zheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/tab_background"
+                    android:text="正面"
+                    android:textColor="#1e009a"
+                    android:textSize="14sp" />
+                
+                <TextView
+                    android:id="@+id/tv_clear_zheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/tab_background"
+                    android:text="清除"
+                    android:textColor="#1e009a"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@color/transparent" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="120dip"
+                        android:background="@drawable/bg_shenfenzheng" />
+
+                    <ImageView
+                        android:id="@+id/iv_shenfenzheng_fan"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_fan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/tab_background"
+                    android:text="反面"
+                    android:textColor="#1e009a"
+                    android:textSize="14sp" />
+                
+                <TextView
+                    android:id="@+id/tv_clear_fan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/tab_background"
+                    android:text="清除"
+                    android:textColor="#1e009a"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/custom_grey1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:singleLine="false"
+            android:text="说明:\n1、返佣需经二代身份证实名认证。\n2、请使用本APP相机拍照上传。"
+            android:textColor="#ff0000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_idnumber_submit"
+        android:paddingBottom="6dip"
+        android:paddingTop="6dip"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

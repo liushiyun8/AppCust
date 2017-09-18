@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_zhuzhai_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_loupanmingcheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dip" >
+
+            <TextView
+                android:id="@+id/tv_loupanmingcheng_tip"
+                style="@style/add_fangyuan_blue_text_style"
+                android:text="楼盘名称：" />
+
+            <ImageView
+                android:id="@+id/iv_loupanmingcheng_arrow"
+                style="@style/add_fangyuan_arrow_style" />
+
+            <TextView
+                android:id="@+id/tv_loupanmingcheng_bitian_tip"
+                style="@style/add_fangyuan_bitian_text_style"
+                android:layout_toLeftOf="@id/iv_loupanmingcheng_arrow" />
+
+            <EditText
+                android:id="@+id/tv_loupanmingcheng"
+                style="@style/add_fangyuan_text_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:layout_toLeftOf="@id/tv_loupanmingcheng_bitian_tip"
+                android:layout_toRightOf="@id/tv_loupanmingcheng_tip"
+                android:hint="请输入楼盘名称" />
+        </RelativeLayout>
+
+        <View style="@style/hor_line_grey_1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp" >
+
+            <TextView
+                android:id="@+id/tv_fangshi_tip"
+                style="@style/add_fangyuan_blue_text_style"
+                android:text="方        式：" />
+
+            <RadioGroup
+                android:id="@+id/rg_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_fangshi_tip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_zhengzu"
+                    style="@style/add_fangyuan_radiobutton_style"
+                    android:checked="true"
+                    android:text="出租" />
+
+                <RadioButton
+                    android:id="@+id/rb_fenzu"
+                    style="@style/add_fangyuan_radiobutton_style"
+                    android:text="分租" />
+
+                <RadioButton
+                    android:id="@+id/rb_chushou"
+                    style="@style/add_fangyuan_radiobutton_style"
+                    android:text="出售" />
+
+                <RadioButton
+                    android:id="@+id/rb_zushou"
+                    style="@style/add_fangyuan_radiobutton_style"
+                    android:text="租售" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <View style="@style/hor_line_grey_1dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_zhengzu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp" >
+
+                    <TextView
+                        android:id="@+id/tv_zujin_tip"
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:text="租        金：" />
+
+                    <ImageView
+                        android:id="@+id/iv_zujin_arrow"
+                        style="@style/add_fangyuan_arrow_style" />
+
+                    <TextView
+                        android:id="@+id/tv_zujin_bitian_tip"
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_toLeftOf="@id/iv_zujin_arrow" />
+
+                    <EditText
+                        android:id="@+id/et_zujin"
+                        style="@style/add_fangyuan_edittext_style"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_zujin_tip"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/tv_zujin_danwei"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/tv_zujin_bitian_tip"
+                        android:layout_toRightOf="@id/et_zujin"
+                        android:text="元/月" />
+                </RelativeLayout>
+
+                <View style="@style/hor_line_short_grey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_zhifufangshi_tip"
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:text="支付方式：" />
+
+                    <ImageView
+                        android:id="@+id/iv_zhifufangshi_arrow"
+                        style="@style/add_fangyuan_arrow_style" />
+
+                    <TextView
+                        android:id="@+id/tv_zhifufangshi_bitian_tip"
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_toLeftOf="@id/iv_zhifufangshi_arrow" />
+
+                    <TextView
+                        android:id="@+id/tv_zhifufangshi_ya_tip"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_zhifufangshi_tip"
+                        android:text="押" />
+
+                    <EditText
+                        android:id="@+id/et_zhifufangshi_ya_num"
+                        style="@style/add_fangyuan_edittext_style"
+                        android:layout_width="40dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/tv_zhifufangshi_ya_tip"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/tv_zhifufangshi_fu_tip"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/et_zhifufangshi_ya_num"
+                        android:text="付" />
+
+                    <EditText
+                        android:id="@+id/et_zhifufangshi_fu_num"
+                        style="@style/add_fangyuan_edittext_style"
+                        android:layout_width="40dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/tv_zhifufangshi_fu_tip"
+                        android:inputType="number" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_chushou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp" >
+
+                    <TextView
+                        android:id="@+id/tv_chushou_tip"
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:text="售        价：" />
+
+                    <ImageView
+                        android:id="@+id/iv_chushou_arrow"
+                        style="@style/add_fangyuan_arrow_style" />
+
+                    <TextView
+                        android:id="@+id/tv_chushou_shoujia_bitian_tip"
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_toLeftOf="@id/iv_chushou_arrow" />
+
+                    <EditText
+                        android:id="@+id/et_chushou_shoujia"
+                        style="@style/add_fangyuan_edittext_style"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_chushou_tip" />
+
+                    <TextView
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/tv_chushou_shoujia_bitian_tip"
+                        android:layout_toRightOf="@id/et_chushou_shoujia"
+                        android:text="万" />
+                </RelativeLayout>
+
+                <View style="@style/hor_line_short_grey" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_shuifeishuoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_shuifeishuoming_tip"
+                        style="@style/add_fangyuan_text_style"
+                        android:text="税费说明：" />
+
+                    <ImageView
+                        android:id="@+id/iv_shuifeishuoming_arrow"
+                        style="@style/add_fangyuan_arrow_style" />
+
+                    <TextView
+                        android:id="@+id/tv_shuifeishuoming_bitian_tip"
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_toLeftOf="@id/iv_shuifeishuoming_arrow" />
+
+                    <TextView
+                        android:id="@+id/tv_shuifeishuoming"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tv_shuifeishuoming_bitian_tip"
+                        android:layout_toRightOf="@id/tv_shuifeishuoming_tip"
+                        android:text="请选择" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/zhushou_child_layout"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fangshi_fenzu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/tv_hezufangshi_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="合租方式：" />
+
+                <EditText
+                    android:id="@+id/et_hezu_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_hezufangshi_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/et_hezu_num"
+                    android:text="户合租" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_chuzujian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/tv_chuzujian_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="出  租  间：" />
+
+                <TextView
+                    android:id="@+id/tv_chuzujian"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_chuzujian_tip"
+                    android:text="请选择" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_fenzutiaojian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/tv_fenzutiaojian_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="分租条件：" />
+
+                <TextView
+                    android:id="@+id/tv_fenzutiaojian"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_fenzutiaojian_tip"
+                    android:text="请选择" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/hor_line_grey_1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_mianji_tip"
+                style="@style/add_fangyuan_blue_text_style"
+                android:text="面        积：" />
+
+            <ImageView
+                android:id="@+id/iv_mianji_arrow"
+                style="@style/add_fangyuan_arrow_style"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_mianji_bitian_tip"
+                style="@style/add_fangyuan_bitian_text_style"
+                android:layout_toLeftOf="@id/iv_mianji_arrow" />
+
+            <EditText
+                android:id="@+id/et_mianji"
+                style="@style/add_fangyuan_edittext_style"
+                android:layout_width="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_mianji_tip"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/add_fangyuan_text_style"
+                android:layout_marginLeft="4dp"
+                android:layout_toLeftOf="@id/tv_mianji_bitian_tip"
+                android:layout_toRightOf="@id/et_mianji"
+                android:text="平方米" />
+        </RelativeLayout>
+
+        <View style="@style/hor_line_short_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_louceng_tip"
+                style="@style/add_fangyuan_blue_text_style"
+                android:text="楼        层：" />
+
+            <ImageView
+                android:id="@+id/iv_louceng_arrow"
+                style="@style/add_fangyuan_arrow_style"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_louceng_bitian_tip"
+                style="@style/add_fangyuan_bitian_text_style"
+                android:layout_toLeftOf="@id/iv_louceng_arrow" />
+
+            <TextView
+                android:id="@+id/tv_louceng_ya_tip"
+                style="@style/add_fangyuan_text_style"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_louceng_tip"
+                android:text="第" />
+
+            <EditText
+                android:id="@+id/et_louceng_di_num"
+                style="@style/add_fangyuan_edittext_style"
+                android:layout_width="40dp"
+                android:layout_marginLeft="3dp"
+                android:digits="0123456789"
+                android:layout_toRightOf="@id/tv_louceng_ya_tip"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tv_louceng_ceng_tip"
+                style="@style/add_fangyuan_text_style"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/et_louceng_di_num"
+                android:text="层，共" />
+
+            <EditText
+                android:id="@+id/et_louceng_total_num"
+                style="@style/add_fangyuan_edittext_style"
+                android:layout_width="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_louceng_ceng_tip"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/add_fangyuan_text_style"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/et_louceng_total_num"
+                android:text="层" />
+        </RelativeLayout>
+
+        <View style="@style/hor_line_short_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_fanghao_tip"
+                style="@style/add_fangyuan_blue_text_style"
+                android:text="房        号：" />
+
+            <ImageView
+                android:id="@+id/iv_fanghao_arrow"
+                style="@style/add_fangyuan_arrow_style"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_fanghao_bitian_tip"
+                style="@style/add_fangyuan_bitian_text_style"
+                android:layout_toLeftOf="@id/iv_fanghao_arrow" />
+
+            <EditText
+                android:id="@+id/et_fanghao"
+                style="@style/add_fangyuan_edittext_style"
+                android:layout_width="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_fanghao_tip"
+                android:inputType="text" />
+        </RelativeLayout>
+
+        <View style="@style/hor_line_grey_2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/add_fangyuan_grey_bg_color"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_kanfangfangshi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_kanfangfangshi_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="看房方式：" />
+
+                <ImageView
+                    android:id="@+id/iv_kanfangfangshi_arrow"
+                    style="@style/add_fangyuan_arrow_style" />
+
+                <TextView
+                    android:id="@+id/tv_kanfangfangshi_bitian_tip"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_toLeftOf="@id/iv_kanfangfangshi_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_kanfangfangshi"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/tv_kanfangfangshi_bitian_tip"
+                    android:layout_toRightOf="@id/tv_kanfangfangshi_tip"
+                    android:text="请选择" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_huxing_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="户        型：" />
+
+                <ImageView
+                    android:id="@+id/iv_huxing_arrow"
+                    style="@style/add_fangyuan_arrow_style"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_huxing_bitian_tip"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_toLeftOf="@id/iv_huxing_arrow" />
+
+                <EditText
+                    android:id="@+id/et_huxing_shi_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_huxing_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_huxing_shi_tip"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/et_huxing_shi_num"
+                    android:text="室" />
+
+                <EditText
+                    android:id="@+id/et_huxing_ting_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_huxing_shi_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_huxing_ting_tip"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/et_huxing_ting_num"
+                    android:text="厅" />
+
+                <EditText
+                    android:id="@+id/et_huxing_wei_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_huxing_ting_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_huxing_wei_tip"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/et_huxing_wei_num"
+                    android:text="卫" />
+
+                <EditText
+                    android:id="@+id/et_huxing_yangtai_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_huxing_wei_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/et_huxing_yangtai_num"
+                    android:text="阳台" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+            <!--  -->
+
+            <RelativeLayout
+                android:id="@+id/rl_chaoxiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_chaoxiang_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="朝        向：" />
+
+                <ImageView
+                    android:id="@+id/iv_chaoxiang_arrow"
+                    style="@style/add_fangyuan_arrow_style" />
+
+                <TextView
+                    android:id="@+id/tv_chaoxiang_bitian_tip"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_toLeftOf="@id/iv_chaoxiang_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_chaoxiang"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/tv_chaoxiang_bitian_tip"
+                    android:layout_toRightOf="@id/tv_chaoxiang_tip"
+                    android:text="请选择" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_zhuangxiuchengdu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_zhuangxiuchengdu_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="装修程度：" />
+
+                <ImageView
+                    android:id="@+id/iv_zhuangxiuchengdu_arrow"
+                    style="@style/add_fangyuan_arrow_style" />
+
+                <TextView
+                    android:id="@+id/tv_zhuangxiuchengdu_bitian_tip"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_toLeftOf="@id/iv_zhuangxiuchengdu_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_zhuangxiuchengdu"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/tv_zhuangxiuchengdu_bitian_tip"
+                    android:layout_toRightOf="@id/tv_zhuangxiuchengdu_tip"
+                    android:text="请选择" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_peitaosheshi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_peitaosheshi_tip"
+                    style="@style/add_fangyuan_text_style"
+                    android:text="配套设施：" />
+
+                <ImageView
+                    android:id="@+id/iv_peitaosheshi_arrow"
+                    style="@style/add_fangyuan_arrow_style" />
+
+                <TextView
+                    android:id="@+id/tv_peitaosheshi_bitian_tip"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_toLeftOf="@id/iv_peitaosheshi_arrow"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_peitaosheshi"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/tv_peitaosheshi_bitian_tip"
+                    android:layout_toRightOf="@id/tv_peitaosheshi_tip"
+                    android:text="请选择" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_jiaofangriqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_jiaofangriqi_tip"
+                    style="@style/add_fangyuan_text_style"
+                    android:text="交房日期：" />
+
+                <ImageView
+                    android:id="@+id/iv_jiaofangriqi_arrow"
+                    style="@style/add_fangyuan_arrow_style" />
+
+                <TextView
+                    android:id="@+id/tv_jiaofangriqi_bitian_tip"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_toLeftOf="@id/iv_jiaofangriqi_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_jiaofangriqi"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/tv_jiaofangriqi_bitian_tip"
+                    android:layout_toRightOf="@id/tv_jiaofangriqi_tip"
+                    android:text="请选择" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_fangyuantedian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_fangyuantedian_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="房源特点：" />
+
+                <ImageView
+                    android:id="@+id/iv_fangyuantedian_arrow"
+                    style="@style/add_fangyuan_arrow_style"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_toLeftOf="@id/iv_fangyuantedian_arrow"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_fangyuantedian"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv_fangyuantedian_tip"
+                    android:text="点击添加" />
+
+                <LinearLayout
+                    android:id="@+id/ll_maidian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv_fangyuantedian_tip"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_maidian_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:background="@drawable/maidian1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="精装修"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_maidian_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="@drawable/maidian2"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="地铁房"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_maidian_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="@drawable/maidian3"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="生活便利"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_maidian_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="@drawable/maidian2"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="生活便利"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/hor_line_grey_2dp"
+                android:layout_marginTop="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/gridview_fangyuantu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/view_line"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="20dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <!--
+                 <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fangyuandengji_add" />
+            -->
+
+            <View
+                style="@style/hor_line_short_grey"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                style="@style/add_fangyuan_text_style"
+                android:padding="8dp"
+                android:text="1、多图房源可获得更多的点击量。系统会自动为房源匹配小区图。\n2、请使用本APP自带相机拍摄上传，并注意相片质量。" />
+        </LinearLayout>
+
+        <View style="@style/hor_line_grey_2dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/add_fangyuan_grey_bg_color" />
+
+        <View style="@style/hor_line_grey_2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/add_fangyuan_text_style"
+                android:text="其他说明：" />
+
+            <EditText
+                android:id="@+id/et_qita_content"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/bg_house_track_content"
+                android:gravity="left|top"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textSize="12sp" >
+            </EditText>
+        </LinearLayout>
+
+        <View style="@style/hor_line_grey_2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="18dp" >
+
+            <Button
+                android:id="@+id/btn_lijifabu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_dengji"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="立即发布"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_daifabu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_dengji"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="暂存待发布"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

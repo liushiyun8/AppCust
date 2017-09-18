@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_bg"
+        android:paddingBottom="20dp">
+
+        <foundation.widget.imageview.CircleImageView
+            android:id="@+id/iv_head"
+            app:border_color="@color/black"
+            app:border_width="1dp"
+            style="@style/head_style"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_bianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_head"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_marginBottom="5dp"
+            android:text=""
+            android:textColor="@color/custom_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/custom_grey"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/tab_background"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_contract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dip">
+
+            <ImageView
+                android:id="@+id/iv_item"
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_contract" />
+
+            <TextView
+                android:id="@+id/tv_item"
+                style="@style/mine_item_text2_style"
+                android:layout_toRightOf="@id/iv_item"
+                android:text="我的合同"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_contractNum"
+                style="@style/mine_item_text2_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black1"></View>
+
+        <RelativeLayout
+            android:id="@+id/layout_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dip">
+
+            <ImageView
+                android:id="@+id/iv_item1"
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_mine_collect" />
+
+            <TextView
+                style="@style/mine_item_text2_style"
+                android:layout_toRightOf="@id/iv_item1"
+                android:text="房源收藏"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_collectNum"
+                style="@style/mine_item_text2_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black1"></View>
+
+        <RelativeLayout
+            android:id="@+id/layout_owerNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dip">
+
+            <ImageView
+                android:id="@+id/iv_item2"
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_owner" />
+
+            <TextView
+                style="@style/mine_item_text2_style"
+                android:layout_toRightOf="@id/iv_item2"
+                android:text="我是业主"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_owerNum"
+                style="@style/mine_item_text2_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black1"></View>
+        <RelativeLayout
+            android:id="@+id/layout_empname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dip">
+
+            <ImageView
+                android:id="@+id/iv_item3"
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_empname" />
+
+            <TextView
+                style="@style/mine_item_text2_style"
+                android:layout_toRightOf="@id/iv_item3"
+                android:text="助理消息"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_empname_message"
+                style="@style/mine_item_text2_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

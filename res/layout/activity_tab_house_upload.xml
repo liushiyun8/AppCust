@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btn_house_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_house_source_upload_btn"
+            android:text="房源图"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dip"
+            android:layout_below="@id/btn_house_source"
+            android:background="@color/transparent" />
+
+        <Button
+            android:id="@+id/btn_hetong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_house_source_upload_btn"
+            android:text="合    同"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_upload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_header"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d8d8d8"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_cloud"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_picture_clound" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/iv_cloud"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <com.eke.cust.widget.NoScrollGridView
+                    android:id="@+id/gridview_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/CustomListView"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp"
+                    android:background="@drawable/bg_rect" />
+            </LinearLayout>
+        </ScrollView>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#3a00ff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            android:layout_marginTop="4dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d8d8d8"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_local"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_local_image" />
+
+                    <TextView
+                        android:id="@+id/tv_name_local"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/iv_local"
+                        android:text="本地"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:id="@+id/lv_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:cacheColorHint="#00000000" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffefc7"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="确认上传"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

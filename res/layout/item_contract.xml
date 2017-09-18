@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_5">
+
+    <ImageView
+        android:id="@+id/iv_house_tag"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_resent_tag" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_house_tag"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt_propertyno"
+            style="@style/mine_item_text_style"
+            android:text="房源编号:" />
+
+        <TextView
+            android:id="@+id/txt_estatename"
+            style="@style/mine_item_text_style"
+            android:text="房        源:" />
+
+
+        <TextView
+            android:id="@+id/txt_price"
+            style="@style/mine_item_text_style"
+            android:text="金        额:" />
+
+        <TextView
+            android:id="@+id/txt_contractdate"
+            style="@style/mine_item_text_style"
+            android:text="合同生成:" />
+
+        <TextView
+            android:id="@+id/txt_pay_state"
+            style="@style/mine_item_text_style"
+            android:text="支付进度:" />
+
+
+        <TextView
+            android:id="@+id/txt_status"
+            style="@style/mine_item_text_style"
+            android:text="合同状态:" />
+
+    </LinearLayout>
+</RelativeLayout>

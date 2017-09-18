@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="8dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="8dip" >
+    
+    <TextView
+        android:id="@+id/tv_estate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:text="123" />
+
+    <!-- <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:src="@drawable/head_xiaobao" />
+    
+    
+    
+    <TextView
+        android:id="@+id/tv_dai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:text="120" />
+    
+    <ImageView
+        android:id="@+id/iv_dai"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_marginRight="3dip"
+        android:layout_toLeftOf="@id/tv_dai"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_dai" />
+    
+    <TextView
+        android:id="@+id/tv_da"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_dai"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:text="120" />
+    
+    <ImageView
+        android:id="@+id/iv_da"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_marginRight="3dip"
+        android:layout_toLeftOf="@id/tv_da"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_da" />
+    
+    <TextView
+        android:id="@+id/tv_tu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_da"
+        android:layout_marginRight="3dip"
+        android:layout_centerVertical="true"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:text="120" />
+    
+    <ImageView
+        android:id="@+id/iv_tu"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_marginRight="3dip"
+        android:layout_toLeftOf="@id/tv_tu"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_tu" />
+    
+    <TextView
+        android:id="@+id/tv_gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_tu"
+        android:layout_marginRight="3dip"
+        android:layout_centerVertical="true"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:text="120" />
+    
+    <ImageView
+        android:id="@+id/iv_gen"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_toLeftOf="@id/tv_gen"
+        android:layout_marginRight="3dip"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_gen" />
+    
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_head"
+        android:layout_toLeftOf="@id/iv_gen"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:layout_marginLeft="3dip"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="xiaobao" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6b6b6b"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="14dip" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6b6b6b"
+        android:gravity="center"
+        android:paddingBottom="4dip"
+        android:paddingTop="4dip"
+        android:text="纠错"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_tab_house_error_report"
+        android:paddingBottom="70dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="10dip"
+        android:paddingTop="8dip" >
+
+        <ListView
+            android:id="@+id/lv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/transparent"
+            android:cacheColorHint="@null"
+            android:divider="@color/transparent" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_other_content"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_alignLeft="@id/btn_submit"
+        android:layout_alignRight="@id/btn_submit"
+        android:layout_below="@id/ll_error"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bg_tab_house_error_report"
+        android:gravity="left|top"
+        android:hint="不少于6个字..."
+        android:inputType="textMultiLine"
+        android:padding="10dip"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textSize="14sp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_other_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/bg_tab_house_error_report"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="提   交"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</RelativeLayout>

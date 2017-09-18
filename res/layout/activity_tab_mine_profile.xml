@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_bg"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/mine_item_style">
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:text="头        像: " />
+
+            <foundation.widget.imageview.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/head_gray"
+                app:border_color="@color/black"
+                app:border_width="@dimen/dimen_1"
+                android:layout_marginTop="16dip"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/mine_item_style">
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:text="注册时间: " />
+
+            <TextView
+                android:id="@+id/tv_zhuceshijian"
+                android:text="1111"
+                style="@style/mine_item_text1_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/custom_grey1" />
+
+
+        <LinearLayout style="@style/mine_item_style">
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:text="登记手机: " />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/mine_item_text1_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/custom_grey1" />
+
+        <LinearLayout
+            android:id="@+id/layout_nike_name"
+            style="@style/mine_item_style">
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:text="昵        称: " />
+
+            <TextView
+                style="@style/mine_item_text1_style"
+                android:layout_weight="1" />
+
+            <ImageView style="@style/mine_item_image_arrow_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/custom_grey1" />
+
+        <LinearLayout
+            android:id="@+id/rl_email"
+            style="@style/mine_item_style">
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:text="邮        箱: " />
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/mine_item_text1_style"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                style="@style/mine_item_image_arrow_style" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/custom_grey1" />
+
+        <LinearLayout
+            android:id="@+id/rl_about_me"
+            style="@style/mine_item_style">
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:text="登录密码: " />
+
+            <TextView
+                android:id="@+id/tv_about_me"
+                style="@style/mine_item_text1_style"
+                android:layout_weight="1" />
+
+            <ImageView style="@style/mine_item_image_arrow_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/custom_grey1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:background="#A2A2A2"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="退出登录"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

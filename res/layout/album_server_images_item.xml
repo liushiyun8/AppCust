@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="100dp"
+    android:layout_height="100dp">
+    <foundation.widget.imageview.CheckableImageView
+        android:id="@+id/image_item"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:padding="2dp"
+        android:background="@drawable/photo_frame_bg"
+        android:contentDescription="@string/app_name"/>
+
+</RelativeLayout>

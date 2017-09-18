@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <GridView
+        android:id="@+id/gridview_action"
+        style="@style/CustomListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ff7f7f7f"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="@dimen/dimen_1"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/dimen_1" />
+
+
+</RelativeLayout>

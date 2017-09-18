@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_itease_layout"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <foundation.widget.imageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/default_avatar"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avatar_container"
+        android:layout_centerVertical="true"
+        android:textColor="@color/list_itease_primary_color"
+        android:text="11111111"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/unread_msg_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/red" />
+        <TextView
+            android:id="@+id/all_msg_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="/7"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/list_itease_secondary_color"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/msg_state"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/avatar_container"
+        android:src="@drawable/ease_msg_state_fail_resend"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mentioned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/msg_state"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:text="@string/were_mentioned"
+        android:textColor="#e84e40"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/time"
+        android:layout_toRightOf="@id/mentioned"
+        android:ellipsize="end"
+        android:padding="7dp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:textColor="@color/list_itease_secondary_color"
+        android:textSize="14sp" />
+
+</RelativeLayout>

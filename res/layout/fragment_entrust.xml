@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="720dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icon_entrust_top" />
+
+    <Button
+        android:id="@+id/bt_phone_register"
+        style="@style/entrust_bt_style"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/bg_phone_entrust"
+        android:text="帮我登记" />
+
+    <Button
+        android:id="@+id/bt_user_register"
+        style="@style/entrust_bt_style"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/bg_user_entrust"
+        android:text="自助登记" />
+
+</LinearLayout>

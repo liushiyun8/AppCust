@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <Button
+            android:id="@+id/btnCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FF000000"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnCenter"
+            android:text="上一月" />
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btnCenter"
+            android:text="下一月" />
+    </RelativeLayout>
+
+    <com.eke.cust.exina.android.calendar.CalendarView
+        android:id="@+id/calendar_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip" />
+
+    <ViewStub
+        android:id="@+id/viewstub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout="@layout/layout_hor_two_btn"/>"
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="20dip"
+        android:background="@color/color_grey" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="NO"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/color_grey"
+            android:visibility="gone" /> -->
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

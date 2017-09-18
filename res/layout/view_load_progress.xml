@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.eke.cust.widget.load.AVLoadingIndicatorView
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        app:indicatorName="BallPulseIndicator" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="@style/progressBarStyleSmall"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip" />
+
+        <TextView
+            android:id="@+id/progress_msg"
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18.0sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>

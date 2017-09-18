@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\ic_del.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\ic_del.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\ic_back.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\ic_back.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\icon_nav_back.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\icon_nav_back.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\checkbox_checked.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\checkbox_checked.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\image_add_nor.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\image_add_nor.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\image_add_sel.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\image_add_sel.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\list_selected.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\list_selected.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\checkbox_normal.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\checkbox_normal.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\qq_refresh_success.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\qq_refresh_success.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\default_image.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\default_image.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\text_indicator.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\text_indicator.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\ic_clear.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\ic_clear.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\loading_sun.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\loading_sun.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\twitter_pull_arrow.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\twitter_pull_arrow.png"
+    },
+    {
+        "merged": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xhdpi-v4\\grid_camera.png",
+        "source": "E:\\demo\\trunk\\AppCust\\commonlibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-xhdpi-v4\\grid_camera.png"
+    }
+]

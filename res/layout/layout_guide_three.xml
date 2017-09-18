@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_welcom3_dw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dimen_100">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_whie_round_bg"
+                android:gravity="center"></View>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/welcom3_dw"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_chat_message" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_welcom3_dw">
+
+            <com.eke.cust.widget.GradientVerticalTextView
+                android:id="@+id/fragment3_text1"
+                style="@style/start_text_style1"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="房源真实可靠" />
+
+            <com.eke.cust.widget.VerticalTextView
+                android:id="@+id/fragment3_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="有效房源 在线支付"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_page3_text"
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center_horizontal">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="120dp"
+                    android:background="@color/white"
+                    android:gravity="center"></View>
+
+                <com.eke.cust.widget.VerticalTextView
+                    android:id="@+id/fragment3_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="资金监管"
+                    android:textColor="#a3d0e9" />
+            </RelativeLayout>
+
+
+            <com.eke.cust.widget.VerticalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="全程客服"
+                android:textColor="@color/fragment2_text"
+                android:visibility="gone" />
+
+            <com.eke.cust.widget.VerticalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="所见即所得"
+                android:textColor="@color/fragment3_text1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_welcom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/dimen_100"
+        android:src="@drawable/welcome3_bg" />
+
+</RelativeLayout>

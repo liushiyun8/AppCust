@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2999999" >
+
+    <LinearLayout
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_global_genfang"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingBottom="6dip"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip" >
+
+        <TextView
+            android:id="@+id/tv_error_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center"
+            android:paddingTop="1dip"
+            android:text="包含非法字符，请核对!"
+            android:textColor="#ff0000"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_content_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="客户手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:textColor="@color/black"
+            android:textSize="12sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="left"
+            android:paddingTop="2dip"
+            android:text="注：客户手机仅后台能看，请放心填写"
+            android:textColor="#7a7a73"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_daikan_btn_disabled"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip"
+            android:text="启动带看"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

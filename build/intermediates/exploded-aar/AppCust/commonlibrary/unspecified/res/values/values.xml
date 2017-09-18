@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <attr format="string" name="fontPath"/>
+    <color name="aliceblue">#f0f8ff</color>
+    <color name="antiquewhite">#faebd7</color>
+    <color name="app_red">#ff5666</color>
+    <color name="app_style_color">#4c637b</color>
+    <color name="aqua">#00ffff</color>
+    <color name="aquamarine">#7fffd4</color>
+    <color name="avoscloud_timestamp_gray">#888</color>
+    <color name="azure">#f0ffff</color>
+    <color name="base_color_text_white">#fff</color>
+    <color name="bb_darkBackgroundColor">#212121</color>
+    <color name="bb_inActiveBottomBarItemColor">#747474</color>
+    <color name="bb_tabletRightBorderDark">#505050</color>
+    <color name="beige">#f5f5dc</color>
+    <color name="bg_color">#ffffff</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="bisque">#ffe4c4</color>
+    <color name="black">#000000</color>
+    <color name="black1">#979797</color>
+    <color name="black_000000">#000000</color>
+    <color name="black_38393E">#38393E</color>
+    <color name="black_actionbar">#393A3F</color>
+    <color name="black_imagepicker_bg">#191919</color>
+    <color name="black_imagepicker_camera_normal">#353535</color>
+    <color name="black_statusbar">#303135</color>
+    <color name="blanchedalmond">#ffebcd</color>
+    <color name="blue">#0000ff</color>
+    <color name="blue_text">#3185fc</color>
+    <color name="blueviolet">#8a2be2</color>
+    <color name="brown">#a52a2a</color>
+    <color name="btn_alert">#222222</color>
+    <color name="burlywood">#deb887</color>
+    <color name="cacheColorHint">#00000000</color>
+    <color name="cadetblue">#5f9ea0</color>
+    <color name="can_withdraw_color">#5db85b</color>
+    <color name="chartreuse">#7fff00</color>
+    <color name="chat_order_text_blue_color">#2860b7</color>
+    <color name="chat_order_text_color">#939393</color>
+    <color name="chocolate">#d2691e</color>
+    <color name="click_bg">#c7c7c7</color>
+    <color name="color_91a091">#91a091</color>
+    <color name="color_common_text">#82C6FE</color>
+    <color name="color_common_white">#ffffff</color>
+    <color name="color_text_black">#4c4c4c</color>
+    <color name="color_tie_bg">#efeff4</color>
+    <color name="comm_bg">#f4f4f4</color>
+    <color name="comm_text_color">#666666</color>
+    <color name="comm_text_hint">#adadad</color>
+    <color name="comment_popup_bg">#292929</color>
+    <color name="comment_popup_tx_bg">#c7c7c7</color>
+    <color name="comment_unselect_bg_color">#fdecea</color>
+    <color name="common_pressed">#dfdfdf</color>
+    <color name="common_text_color">#333333</color>
+    <color name="comui_tab_text_color">#979797</color>
+    <color name="coral">#ff7f50</color>
+    <color name="cornflowerblue">#6495ed</color>
+    <color name="cornsilk">#fff8dc</color>
+    <color name="crimson">#dc143c</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="cyan">#00ffff</color>
+    <color name="dark">#8c8c8c</color>
+    <color name="darkblue">#00008b</color>
+    <color name="darkcyan">#008b8b</color>
+    <color name="darkgoldenrod">#b8860b</color>
+    <color name="darkgray">#a9a9a9</color>
+    <color name="darkgreen">#006400</color>
+    <color name="darkgrey">#a9a9a9</color>
+    <color name="darkkhaki">#bdb76b</color>
+    <color name="darkmagenta">#8b008b</color>
+    <color name="darkolivegreen">#556b2f</color>
+    <color name="darkorange">#ff8c00</color>
+    <color name="darkorchid">#9932cc</color>
+    <color name="darkred">#8b0000</color>
+    <color name="darksalmon">#e9967a</color>
+    <color name="darkseagreen">#8fbc8f</color>
+    <color name="darkslateblue">#483d8b</color>
+    <color name="darkslategray">#2f4f4f</color>
+    <color name="darkslategrey">#2f4f4f</color>
+    <color name="darkturquoise">#00ced1</color>
+    <color name="darkviolet">#9400d3</color>
+    <color name="datepick_surance_blue">#3598da</color>
+    <color name="deeppink">#ff1493</color>
+    <color name="deepskyblue">#00bfff</color>
+    <color name="delte_color">#8c9fb3</color>
+    <color name="dialog_color1">#a8a8a8</color>
+    <color name="dialog_line_color">#9fa2a1</color>
+    <color name="dialog_title_color">#e3eaf4</color>
+    <color name="dialogui_btn_normal">#ffffff</color>
+    <color name="dialogui_btn_pressed">#eeeeee</color>
+    <color name="dimgray">#696969</color>
+    <color name="dimgrey">#696969</color>
+    <color name="dodgerblue">#1e90ff</color>
+    <color name="edit_color">#4c637b</color>
+    <color name="feature_item_line_color">#acacac</color>
+    <color name="feature_item_text_color_normal">#8e9fb1</color>
+    <color name="fillColor">#b7c1cb</color>
+    <color name="firebrick">#b22222</color>
+    <color name="floralwhite">#fffaf0</color>
+    <color name="forestgreen">#228b22</color>
+    <color name="fuchsia">#ff00ff</color>
+    <color name="gainsboro">#dcdcdc</color>
+    <color name="ghostwhite">#f8f8ff</color>
+    <color name="gold">#ffd700</color>
+    <color name="goldenrod">#daa520</color>
+    <color name="gray">#808080</color>
+    <color name="gray_cecece">#cecece</color>
+    <color name="gray_imagepicker_text">#CFCFCF</color>
+    <color name="green">#008000</color>
+    <color name="greenyellow">#adff2f</color>
+    <color name="grey">#808080</color>
+    <color name="have_withdraw_color">#eeae43</color>
+    <color name="hint_color">#acacad</color>
+    <color name="honeydew">#f0fff0</color>
+    <color name="hotpink">#ff69b4</color>
+    <color name="ic_default_bg_color">#33000000</color>
+    <color name="indianred">#cd5c5c</color>
+    <color name="indigo">#4b0082</color>
+    <color name="ios_btntext_blue">#007aff</color>
+    <color name="ivory">#fffff0</color>
+    <color name="keep_out_color">#292018</color>
+    <color name="khaki">#f0e68c</color>
+    <color name="lavender">#e6e6fa</color>
+    <color name="lavenderblush">#fff0f5</color>
+    <color name="lawngreen">#7cfc00</color>
+    <color name="lemonchiffon">#fffacd</color>
+    <color name="light_black">#3f424e</color>
+    <color name="light_dark">#787878</color>
+    <color name="light_dark_line_bg">#d7dee0</color>
+    <color name="light_line">#e7e7e7</color>
+    <color name="lightblack">#979797</color>
+    <color name="lightblue">#add8e6</color>
+    <color name="lightcoral">#f08080</color>
+    <color name="lightcyan">#e0ffff</color>
+    <color name="lightgoldenrodyellow">#fafad2</color>
+    <color name="lightgray">#d3d3d3</color>
+    <color name="lightgreen">#90ee90</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="lightpink">#ffb6c1</color>
+    <color name="lightsalmon">#ffa07a</color>
+    <color name="lightseagreen">#20b2aa</color>
+    <color name="lightskyblue">#87cefa</color>
+    <color name="lightslategray">#778899</color>
+    <color name="lightslategrey">#778899</color>
+    <color name="lightsteelblue">#b0c4de</color>
+    <color name="lightyellow">#ffffe0</color>
+    <color name="lime">#00ff00</color>
+    <color name="limegreen">#32cd32</color>
+    <color name="line_bg">#CDCDCD</color>
+    <color name="line_color">#cdcdcd</color>
+    <color name="line_dd">#dddddd</color>
+    <color name="linen">#faf0e6</color>
+    <color name="login_input_bg">#fbfbfc</color>
+    <color name="login_lable">#6b9ff3</color>
+    <color name="magenta">#ff00ff</color>
+    <color name="main_menu_bg">#aa111213</color>
+    <color name="maroon">#800000</color>
+    <color name="mediumaquamarine">#66cdaa</color>
+    <color name="mediumblue">#0000cd</color>
+    <color name="mediumorchid">#ba55d3</color>
+    <color name="mediumpurple">#9370db</color>
+    <color name="mediumseagreen">#3cb371</color>
+    <color name="mediumslateblue">#7b68ee</color>
+    <color name="mediumspringgreen">#00fa9a</color>
+    <color name="mediumturquoise">#48d1cc</color>
+    <color name="mediumvioletred">#c71585</color>
+    <color name="menu_bg">#2b2b2b</color>
+    <color name="menu_click_bg">#515151</color>
+    <color name="midnightblue">#191970</color>
+    <color name="mine_head_border_color">#ffb55b</color>
+    <color name="mine_label">#FFFFFF</color>
+    <color name="mine_label_pressed">#e9eaeb</color>
+    <color name="mintcream">#f5fffa</color>
+    <color name="mis_actionbar_color">#21282C</color>
+    <color name="mistyrose">#ffe4e1</color>
+    <color name="moccasin">#ffe4b5</color>
+    <color name="multiple_image_select_accent">#4CAF50</color>
+    <color name="multiple_image_select_albumTextBackground">#99FFFFFF</color>
+    <color name="multiple_image_select_buttonText">#FFFFFF</color>
+    <color name="multiple_image_select_divider">#B6B6B6</color>
+    <color name="multiple_image_select_imageSelectBackground">#000000</color>
+    <color name="multiple_image_select_primary">#2E7D32</color>
+    <color name="multiple_image_select_primaryDark">#1B5E20</color>
+    <color name="multiple_image_select_primaryLight">#C8E6C9</color>
+    <color name="multiple_image_select_primaryText">#212121</color>
+    <color name="multiple_image_select_secondaryText">#727272</color>
+    <color name="multiple_image_select_toolbarPrimaryText">#FFFFFF</color>
+    <color name="nav_bar_bg">#FCDE00</color>
+    <color name="nav_bar_title_color">#000099</color>
+    <color name="nav_bottom_line_color">#acacac</color>
+    <color name="navajowhite">#ffdead</color>
+    <color name="navy">#000080</color>
+    <color name="oldlace">#fdf5e6</color>
+    <color name="olive">#808000</color>
+    <color name="olivedrab">#6b8e23</color>
+    <color name="operate_supply_item_bg">#fafafa</color>
+    <color name="operate_supply_item_title">#787878</color>
+    <color name="orange">#ffa500</color>
+    <color name="orangered">#ff4500</color>
+    <color name="orchid">#da70d6</color>
+    <color name="order_dark_color">#8f9195</color>
+    <color name="order_detail_color">#f5f5f5</color>
+    <color name="order_item_color">#ffffff</color>
+    <color name="order_money_color">#787878</color>
+    <color name="order_name_color">#3f424e</color>
+    <color name="order_normal_color">#e6e9ef</color>
+    <color name="order_red_color">#f74c31</color>
+    <color name="order_text_color">#a0a0a0</color>
+    <color name="order_time_color">#9f9f9f</color>
+    <color name="order_top_lable_color">#eeeeee</color>
+    <color name="palegoldenrod">#eee8aa</color>
+    <color name="palegreen">#98fb98</color>
+    <color name="paleturquoise">#afeeee</color>
+    <color name="palevioletred">#db7093</color>
+    <color name="papayawhip">#ffefd5</color>
+    <color name="pay_order">#e03d3e</color>
+    <color name="pay_order_green">#94c991</color>
+    <color name="pay_order_violet">#af5d9f</color>
+    <color name="pay_order_yellow">#edad43</color>
+    <color name="peachpuff">#ffdab9</color>
+    <color name="peru">#cd853f</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="plum">#dda0dd</color>
+    <color name="popup_bg">#8f000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="powderblue">#b0e0e6</color>
+    <color name="pstsDividerColor">#888</color>
+    <color name="publig">#979797</color>
+    <color name="purple">#800080</color>
+    <color name="red">#ff0000</color>
+    <color name="register_line_color">#bdbec0</color>
+    <color name="result_view">#b0000000</color>
+    <color name="rosybrown">#bc8f8f</color>
+    <color name="royalblue">#4169e1</color>
+    <color name="saddlebrown">#8b4513</color>
+    <color name="salmon">#fa8072</color>
+    <color name="sandybrown">#f4a460</color>
+    <color name="seaShell">#fff5ee</color>
+    <color name="seagreen">#2e8b57</color>
+    <color name="shelve_color">#38b1ea</color>
+    <color name="sienna">#a0522d</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="simple_message_bg">#dddddd</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="slateblue">#6a5acd</color>
+    <color name="slategray">#708090</color>
+    <color name="slategrey">#708090</color>
+    <color name="snow">#fffafa</color>
+    <color name="springgreen">#00ff7f</color>
+    <color name="status_bar">#303135</color>
+    <color name="steelblue">#4682b4</color>
+    <color name="supply_item_text_color">#666666</color>
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+    <color name="tab_check">#00ba98</color>
+    <color name="tab_check_bg_color">#157efb</color>
+    <color name="tab_text_normal">#212121</color>
+    <color name="tab_text_normal_color">#c5c5cd</color>
+    <color name="tan">#d2b48c</color>
+    <color name="teal">#008080</color>
+    <color name="text_black">#333333</color>
+    <color name="text_black_light">#666666</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_gray_light">#B3B3B3</color>
+    <color name="text_input_44">#444444</color>
+    <color name="text_item_33">#333333</color>
+    <color name="text_msg_33">#333333</color>
+    <color name="text_title_11">#111111</color>
+    <color name="theme_body">#cc22292c</color>
+    <color name="thistle">#d8bfd8</color>
+    <color name="tomato">#ff5666</color>
+    <color name="top_bar">#9f556061</color>
+    <color name="transblack60_imagepicker">#60000000</color>
+    <color name="transblack90_imagepicker">#90000000</color>
+    <color name="transblack_25000000">#25000000</color>
+    <color name="transblack_50000000">#50000000</color>
+    <color name="transblack_75000000">#75000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_00000000">#00000000</color>
+    <color name="transparent_imagepicker">#00000000</color>
+    <color name="transwhite_imagepicker_text">#60ffffff</color>
+    <color name="turquoise">#40e0d0</color>
+    <color name="txt_blue">#4dc3f0</color>
+    <color name="txt_light_black">#3f424e</color>
+    <color name="txt_light_dark">#787878</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="violet">#ee82ee</color>
+    <color name="wheat">#f5deb3</color>
+    <color name="white">#ffffff</color>
+    <color name="white_FFFFFF">#ffffff</color>
+    <color name="white_imagepicker_text">#ffffff</color>
+    <color name="whitesmoke">#f5f5f5</color>
+    <color name="yellow">#ffff00</color>
+    <declare-styleable name="AVLoadingIndicatorView"><attr format="dimension" name="minWidth"/><attr format="dimension" name="maxWidth"/><attr format="dimension" name="minHeight"/><attr format="dimension" name="maxHeight"/><attr format="string" name="indicatorName"/><attr format="color" name="indicatorColor"/></declare-styleable>
+    <declare-styleable name="BaseTextView"><attr format="reference" name="sDrawableLeft"/><attr format="reference" name="sDrawableTop"/><attr format="reference" name="sDrawableRight"/><attr format="reference" name="sDrawableBottom"/><attr format="string" name="sTextString"/><attr format="dimension" name="sTextSize"/><attr format="color" name="sTextColor"/><attr format="dimension" name="sDrawablePadding"/><attr format="dimension" name="sPadding"/><attr format="dimension" name="sPaddingLeft"/><attr format="dimension" name="sPaddingTop"/><attr format="dimension" name="sPaddingBottom"/><attr format="dimension" name="sPaddingRight"/></declare-styleable>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
+    <declare-styleable name="CircleIndicator"><attr format="dimension" name="ci_width"/><attr format="dimension" name="ci_height"/><attr format="dimension" name="ci_margin"/><attr format="reference" name="ci_animator"/><attr format="reference" name="ci_animator_reverse"/><attr format="reference" name="ci_drawable"/><attr format="reference" name="ci_drawable_unselected"/><attr format="enum" name="ci_orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr name="ci_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
+    <declare-styleable name="CommonTextView"><attr format="reference" name="cLeftIconResForDrawableLeft"/><attr format="reference" name="cLeftIconResForDrawableTop"/><attr format="reference" name="cLeftIconResForDrawableRight"/><attr format="reference" name="cLeftIconResForDrawableBottom"/><attr format="reference" name="cCenterIconResForDrawableLeft"/><attr format="reference" name="cCenterIconResForDrawableTop"/><attr format="reference" name="cCenterIconResForDrawableRight"/><attr format="reference" name="cCenterIconResForDrawableBottom"/><attr format="reference" name="cRightIconResForDrawableLeft"/><attr format="reference" name="cRightIconResForDrawableTop"/><attr format="reference" name="cRightIconResForDrawableRight"/><attr format="reference" name="cRightIconResForDrawableBottom"/><attr format="string" name="cLeftTextString"/><attr format="string" name="cCenterTextString"/><attr format="string" name="cRightTextString"/><attr format="dimension" name="cLeftTextSize"/><attr format="dimension" name="cRightTextSize"/><attr format="dimension" name="cCenterTextSize"/><attr format="color" name="cLeftTextColor"/><attr format="color" name="cRightTextColor"/><attr format="color" name="cCenterTextColor"/><attr format="dimension" name="cLeftIconDrawablePadding"/><attr format="dimension" name="cCenterIconDrawablePadding"/><attr format="dimension" name="cRightIconDrawablePadding"/><attr format="dimension" name="cLeftViewPaddingLeft"/><attr format="dimension" name="cLeftViewPaddingRight"/><attr format="dimension" name="cCenterViewPaddingLeft"/><attr format="dimension" name="cCenterViewPaddingRight"/><attr format="dimension" name="cRightViewPaddingLeft"/><attr format="dimension" name="cRightViewPaddingRight"/><attr format="dimension" name="cTopDividerLineMarginLR"/><attr format="dimension" name="cBottomDividerLineMarginLR"/><attr format="dimension" name="cBothDividerLineMarginLR"/><attr format="dimension" name="cLeftTextViewLineSpacingExtra"/><attr format="dimension" name="cCenterTextViewLineSpacingExtra"/><attr format="dimension" name="cRightTextViewLineSpacingExtra"/><attr format="color" name="cDividerLineColor"/><attr format="dimension" name="cDividerLineHeight"/><attr format="enum" name="cShowDividerLineType"><enum name="none" value="0"/><enum name="top" value="1"/><enum name="bottom" value="2"/><enum name="both" value="3"/></attr><attr format="boolean" name="cUseRipple"/><attr format="color" name="cBackgroundColor"/><attr format="boolean" name="cSetSingleLine"/><attr format="integer" name="cSetMaxEms"/><attr format="integer" name="cSetLines"/><attr format="enum" name="cLeftTextViewGravity"><enum name="left_center" value="0"/><enum name="center" value="1"/><enum name="right_center" value="2"/></attr><attr format="enum" name="cCenterTextViewGravity"><enum name="left_center" value="0"/><enum name="center" value="1"/><enum name="right_center" value="2"/></attr><attr format="enum" name="cRightTextViewGravity"><enum name="left_center" value="0"/><enum name="center" value="1"/><enum name="right_center" value="2"/></attr></declare-styleable>
+    <declare-styleable name="ConvenientBanner"><attr format="boolean" name="canLoop"/></declare-styleable>
+    <declare-styleable name="EditTags"><attr format="dimension" name="horizontal_spacing"/><attr format="dimension" name="vertical_spacing"/><attr format="reference" name="tag_background"/><attr format="reference" name="tag_item_background"/><attr format="integer" name="tag_max_count"/><attr format="integer" name="tag_max_length"/></declare-styleable>
+    <declare-styleable name="HighlightTextView"><attr format="integer" name="highlight_position"/><attr format="integer" name="highlight_num"/><attr format="color" name="highlight_color"/><attr format="dimension" name="highlight_size"/></declare-styleable>
+    <declare-styleable name="MainNavigateTabBar"><attr format="color|reference" name="navigateTabTextColor"/><attr format="color|reference" name="navigateTabSelectedTextColor"/><attr format="integer|reference" name="containerId"/><attr format="dimension|reference" name="navigateTabTextSize"/></declare-styleable>
+    <declare-styleable name="NiceSpinner"><attr format="color" name="arrowTint"/><attr format="boolean" name="hideArrow"/><attr format="integer" name="backgroundSelector"/><attr format="color" name="textTint"/></declare-styleable>
+    <declare-styleable name="NineGridView"><attr format="dimension" name="nine_singleImageSize"/><attr format="float" name="nine_singleImageRatio"/><attr format="dimension" name="nine_gridSpacing"/><attr format="integer" name="nine_maxSize"/><attr format="enum" name="nine_mode"><enum name="fill" value="0"/><enum name="grid" value="1"/><enum name="horizontal" value="2"/></attr><attr format="enum" name="ine_singleScaleType"><enum name="FIT_START" value="5"/><enum name="CENTER_CROP" value="1"/><enum name="FIT_CENTER" value="3"/></attr></declare-styleable>
+    <declare-styleable name="PagerSlidingTab"><attr format="color" name="pageindicatorColor"/><attr format="color" name="underlineColor"/><attr format="color" name="setectTextColor"/><attr format="color" name="unsetectTextColor"/><attr format="color" name="dividerColor"/><attr format="dimension" name="indicatorHeight"/><attr format="dimension" name="underlineHeight"/><attr format="dimension" name="pst_dividerPadding"/><attr format="dimension" name="tabPaddingLeftRight"/><attr format="dimension" name="scrollOffset"/><attr format="reference" name="tabBackgrounds"/><attr format="boolean" name="sameLine"/><attr format="boolean" name="pst_textAllCaps"/></declare-styleable>
+    <declare-styleable name="PopLayout"><attr format="dimension" name="radiusSize"/><attr format="dimension" name="bulgeSize"/><attr format="dimension" name="offsetSize"/><attr format="enum" name="siteMode"><enum name="top" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/><enum name="bottom" value="3"/></attr></declare-styleable>
+    <declare-styleable name="ProgressPieView"><attr name="android:text"/><attr name="android:textSize"/><attr name="android:textColor"/><attr format="integer" name="ppvProgress"/><attr format="integer" name="ppvMax"/><attr format="integer" name="ppvStartAngle"/><attr format="boolean" name="ppvInverted"/><attr format="boolean" name="ppvCounterclockwise"/><attr format="dimension" name="ppvStrokeWidth"/><attr format="reference|color" name="ppvBackgroundColor"/><attr format="reference|color" name="ppvProgressColor"/><attr format="reference|color" name="ppvStrokeColor"/><attr format="boolean" name="ppvShowStroke"/><attr format="boolean" name="ppvShowText"/><attr format="string" name="ppvTypeface"/><attr format="reference" name="ppvImage"/><attr format="enum" name="ppvProgressFillType"><enum name="radial" value="0"/><enum name="center" value="1"/></attr></declare-styleable>
+    <declare-styleable name="RoundProgressBar"><attr format="color" name="roundColor"/><attr format="color" name="roundProgressColor"/><attr format="dimension" name="roundWidth"/><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/><attr format="integer" name="max"/><attr format="boolean" name="textIsDisplayable"/><attr name="style"><enum name="STROKE" value="0"/><enum name="FILL" value="1"/></attr></declare-styleable>
+    <declare-styleable name="SimpleViewBehavior"><attr format="reference" name="svb_dependOn"/><attr name="svb_dependType"><enum name="height" value="0"/><enum name="width" value="1"/><enum name="x" value="2"/><enum name="y" value="3"/></attr><attr format="reference|dimension" name="svb_dependTargetX"/><attr format="reference|dimension" name="svb_dependTargetY"/><attr format="reference|dimension" name="svb_dependTargetWidth"/><attr format="reference|dimension" name="svb_dependTargetHeight"/><attr format="reference|dimension" name="svb_targetX"/><attr format="reference|dimension" name="svb_targetY"/><attr format="reference|dimension" name="svb_targetWidth"/><attr format="reference|dimension" name="svb_targetHeight"/><attr format="reference|color" name="svb_targetBackgroundColor"/><attr format="float" name="svb_targetAlpha"/><attr format="float" name="svb_targetRotateX"/><attr format="float" name="svb_targetRotateY"/><attr format="reference" name="svb_animation"/></declare-styleable>
+    <declare-styleable name="SuperSwipeRefreshLayout"><attr name="direction"><enum name="top" value="0"/><enum name="bottom" value="1"/><enum name="both" value="2"/></attr></declare-styleable>
+    <declare-styleable name="SuperTextView"><attr format="dimension" name="sLeftIconWidth"/><attr format="dimension" name="sLeftIconHeight"/><attr format="reference" name="sLeftIconRes"/><attr format="reference" name="sRightIconRes"/><attr format="reference" name="sRightCheckBoxRes"/><attr format="string" name="sLeftTextString"/><attr format="string" name="sCenterTextString"/><attr format="string" name="sRightTextString"/><attr format="string" name="sLeftTopTextString"/><attr format="string" name="sLeftBottomTextString"/><attr format="string" name="sLeftBottomTextString2"/><attr format="dimension" name="sTopLineMargin"/><attr format="dimension" name="sBottomLineMargin"/><attr format="dimension" name="sBothLineMargin"/><attr format="dimension" name="sCenterSpaceHeight"/><attr format="dimension" name="sLeftIconMarginLeft"/><attr format="dimension" name="sLeftTextMarginLeft"/><attr format="dimension" name="sLeftTopTextMarginLeft"/><attr format="dimension" name="sLeftBottomTextMarginLeft"/><attr format="dimension" name="sLeftBottomTextMarginLeft2"/><attr format="reference" name="sRightTextStringRightIconRes"/><attr format="dimension" name="sRightTextStringRightIconResPadding"/><attr format="dimension" name="sRightIconMarginRight"/><attr format="dimension" name="sRightTextMarginRight"/><attr format="dimension" name="sRightCheckBoxMarginRight"/><attr format="boolean" name="sRightCheckBoxShow"/><attr format="boolean" name="sIsChecked"/><attr format="boolean" name="sUseRipple"/><attr format="dimension" name="sLeftTextSize"/><attr format="dimension" name="sLeftTopTextSize"/><attr format="dimension" name="sLeftBottomTextSize"/><attr format="dimension" name="sLeftBottomTextSize2"/><attr format="dimension" name="sRightTextSize"/><attr format="dimension" name="sCenterTextSize"/><attr format="color" name="sBackgroundColor"/><attr format="color" name="sLeftTextColor"/><attr format="color" name="sLeftTopTextColor"/><attr format="color" name="sLeftBottomTextColor"/><attr format="color" name="sLeftBottomTextColor2"/><attr format="color" name="sRightTextColor"/><attr format="color" name="sCenterTextColor"/><attr format="boolean" name="sIsSingLines"/><attr format="integer" name="sMaxLines"/><attr format="integer" name="sMaxEms"/><attr format="enum" name="sLineShow"><enum name="none" value="0"/><enum name="top" value="1"/><enum name="bottom" value="2"/><enum name="both" value="3"/></attr><attr format="dimension" name="sBothLineWidth"/><attr format="dimension" name="sTopLineWidth"/><attr format="dimension" name="sBottomLineWidth"/><attr format="color" name="sLineColor"/></declare-styleable>
+    <declare-styleable name="SwipeToLoadLayout"><attr format="boolean" name="refresh_enabled"/><attr format="boolean" name="load_more_enabled"/><attr format="enum" name="swipe_style"><enum name="classic" value="0"/><enum name="above" value="1"/><enum name="blew" value="2"/><enum name="scale" value="3"/></attr><attr format="float" name="drag_ratio"/><attr format="dimension" name="refresh_trigger_offset"/><attr format="dimension" name="load_more_trigger_offset"/><attr format="dimension" name="refresh_final_drag_offset"/><attr format="dimension" name="load_more_final_drag_offset"/><attr format="integer" name="swiping_to_refresh_to_default_scrolling_duration"/><attr format="integer" name="release_to_refreshing_scrolling_duration"/><attr format="integer" name="refresh_complete_delay_duration"/><attr format="integer" name="refresh_complete_to_default_scrolling_duration"/><attr format="integer" name="default_to_refreshing_scrolling_duration"/><attr format="integer" name="swiping_to_load_more_to_default_scrolling_duration"/><attr format="integer" name="release_to_loading_more_scrolling_duration"/><attr format="integer" name="load_more_complete_delay_duration"/><attr format="integer" name="load_more_complete_to_default_scrolling_duration"/><attr format="integer" name="default_to_loading_more_scrolling_duration"/></declare-styleable>
+    <declare-styleable name="SwitchButton"><attr format="reference" name="cursor"/><attr format="color" name="selectedBG"/><attr format="color" name="unselectedBG"/><attr format="integer" name="moveDuration"/><attr format="dimension" name="trackWidth"/><attr format="dimension" name="trackPadding"/><attr format="dimension" name="cursorTouchExpand"/><attr format="enum" name="status"><enum name="ON" value="0x00"/><enum name="OFF" value="0x01"/></attr><attr format="dimension" name="shadowExpand"/><attr format="dimension" name="shadowXDiff"/><attr format="dimension" name="shadowYDiff"/><attr format="reference" name="shadow"/></declare-styleable>
+    <declare-styleable name="WaveSideBar"><attr format="boolean" name="sidebar_lazy_respond"/><attr format="color" name="sidebar_text_color"/><attr format="dimension" name="sidebar_max_offset"/><attr format="enum" name="sidebar_position"><enum name="right" value="0"/><enum name="left" value="1"/></attr></declare-styleable>
+    <declare-styleable name="choose_CropImageView"><attr format="color" name="cropMaskColor"/><attr format="color" name="cropBorderColor"/><attr format="dimension" name="cropBorderWidth"/><attr format="dimension" name="cropFocusWidth"/><attr format="dimension" name="cropFocusHeight"/><attr format="enum" name="cropStyle"><enum name="rectangle" value="0"/><enum name="circle" value="1"/></attr></declare-styleable>
+    <dimen name="bb_height">56dp</dimen>
+    <dimen name="bulge_size" ns1:ignore="ResourceName">7dp</dimen>
+    <dimen name="button_height_normal">40dp</dimen>
+    <dimen name="button_height_short">32dp</dimen>
+    <dimen name="button_height_tall">60dp</dimen>
+    <dimen name="comui_tab_text_marginBottom">5dp</dimen>
+    <dimen name="crop__bar_height">56dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_250">250dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_div_5">5sp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="font_huge">@dimen/sp_50</dimen>
+    <dimen name="font_large">@dimen/sp_20</dimen>
+    <dimen name="font_larger">@dimen/sp_24</dimen>
+    <dimen name="font_normal">@dimen/sp_16</dimen>
+    <dimen name="font_small">@dimen/sp_12</dimen>
+    <dimen name="height_imagepicker_bottomview">50dp</dimen>
+    <dimen name="load_more_footer_height_classic">60dp</dimen>
+    <dimen name="main_navigate_tab_bar_height">50dp</dimen>
+    <dimen name="mis_folder_cover_size">72dp</dimen>
+    <dimen name="mis_image_size">96dp</dimen>
+    <dimen name="mis_space_size">2dp</dimen>
+    <dimen name="pop_radius" ns1:ignore="ResourceName">7dp</dimen>
+    <dimen name="refresh_header_height_twitter">80dp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_19">19sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_21">21sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_50">50sp</dimen>
+    <dimen name="spacing_huge">40dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <item name="cCenterTextId" type="id"/>
+    <item name="cLeftTextId" type="id"/>
+    <item name="cRightTextId" type="id"/>
+    <item name="cab_imagepicker_viewpager_top" type="id"/>
+    <item name="calligraphy_tag_id" type="id"/>
+    <item name="cb_item_tag" type="id"/>
+    <item name="item_click_support" type="id"/>
+    <item name="item_selection_support" type="id"/>
+    <item name="rl_imagepicker_viewpager_root" type="id"/>
+    <item name="sCenterBaseLineId" type="id"/>
+    <item name="sCenterTextId" type="id"/>
+    <item name="sLeftBottomTextId" type="id"/>
+    <item name="sLeftBottomTextId2" type="id"/>
+    <item name="sLeftIconId" type="id"/>
+    <item name="sLeftTextId" type="id"/>
+    <item name="sLeftTopTextId" type="id"/>
+    <item name="sRightIconId" type="id"/>
+    <item name="sRightTextId" type="id"/>
+    <item name="slidable_content" type="id"/>
+    <item name="slidable_panel" type="id"/>
+    <item name="swipe_load_more_footer" type="id"/>
+    <item name="swipe_refresh_header" type="id"/>
+    <item name="swipe_target" type="id"/>
+    <item name="view_imagepicker_viewpager_bottom" type="id"/>
+    <item name="vp_imagepicker_viewpager_content" type="id"/>
+    <string name="all_images">全部图片</string>
+    <string name="api_cancle">取消请求</string>
+    <string name="api_error">接口数据异常!</string>
+    <string name="api_timeout">连接超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    <string name="app_run_error">抱歉，发生异常</string>
+    <string name="back_exit_tips">再按一次返回键退出应用</string>
+    <string name="btn_imagepicker_ok">完成(%1$s/%2$s)</string>
+    <string name="complete">完成</string>
+    <string name="crop_cancel">取消</string>
+    <string name="crop_done">保存</string>
+    <string name="crop_pick_error">图片无效</string>
+    <string name="crop_saving">保存图片…</string>
+    <string name="crop_wait">请稍等…</string>
+    <string name="dialog_imagepicker_permission_camera_message">应用程序需要获取拍照权限，否则无法拍摄照片!</string>
+    <string name="dialog_imagepicker_permission_camera_nerver_ask_message">应用程序无法获取拍照权限，导致无法启用拍照功能，您可通过系统设置界面打开软件的拍照权限</string>
+    <string name="dialog_imagepicker_permission_confirm">我知道了</string>
+    <string name="dialog_imagepicker_permission_nerver_ask_cancel">取消</string>
+    <string name="dialog_imagepicker_permission_nerver_ask_confirm">去设置</string>
+    <string name="dialog_imagepicker_permission_sdcard_message">应用程序需要获取外部存储卡的读写权限，否则无法获取照片数据!</string>
+    <string name="dialog_imagepicker_permission_sdcard_nerver_ask_message">应用程序无法获取外部存储卡的读写权限，导致无法获取照片数据，您可通过系统设置界面打开软件的读写权限</string>
+    <string name="dialog_imagepicker_permission_title">权限申明</string>
+    <string name="error_imagepicker_parsefail">无法读取图片</string>
+    <string name="error_imagepicker_scanfail">无法扫描本地图片数据</string>
+    <string name="error_no_sdcard">SD卡不存在！</string>
+    <string name="folder_image_count">共%1$d张</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="http_status_code_error">网络异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="label_imagepicker_allfloder">全部图片</string>
+    <string name="load_all_susses">已经全部加载完毕！</string>
+    <string name="load_fail">加载失败！</string>
+    <string name="load_more_text">加载更多....</string>
+    <string name="load_susses">加载成功！</string>
+    <string name="loading">loading</string>
+    <string name="login_fail">登录失败</string>
+    <string name="message_error">当前网络不可用，请检查你的网络设置</string>
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="origin">原图</string>
+    <string name="origin_size">原图(%1$s)</string>
+    <string name="photo_crop">图片裁剪</string>
+    <string name="preview_count">预览(%1$s)</string>
+    <string name="preview_image_count">%1$s/%2$s</string>
+    <string name="rationale_ask_again">app需要相关权限,请打开设置修改权限</string>
+    <string name="refresh_fail">刷新失败！</string>
+    <string name="refresh_susses">刷新成功！</string>
+    <string name="select">%1$s/%2$s</string>
+    <string name="select_complete">完成(%1$s/%2$s)</string>
+    <string name="select_limit">最多选择%1$s张图片</string>
+    <string name="socket_cancle">取消操作</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="tip_network_error">没有可用的网络</string>
+    <string name="title_settings_dialog">请求权限</string>
+    <string name="tv_imagepicker_actionbar_preview">预览</string>
+    <string name="tv_imagepicker_back">返回</string>
+    <string name="tv_imagepicker_floder_img_num">%1$s张图片</string>
+    <string name="tv_imagepicker_gridactivity_title">选择图片</string>
+    <string name="tv_imagepicker_griditem_camera">拍摄照片</string>
+    <string name="tv_imagepicker_pager_titlecount">%1$s/%2$s</string>
+    <string name="tv_imagepicker_vp_bottom_choose">选中</string>
+    <string name="warning_imagepicker_limit_num">只能选择%1$s张照片</string>
+    <string name="warning_imagepicker_permission_camera_denied">无法获取拍照权限</string>
+    <string name="warning_imagepicker_permission_sdcard_denied">无法获取外部存储卡读写权限</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallSpinFadeLoaderIndicator</item>
+        <item name="indicatorColor">@color/app_style_color</item>
+    </style>
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">76dip</item>
+        <item name="maxWidth">76dip</item>
+        <item name="minHeight">76dip</item>
+        <item name="maxHeight">76dip</item>
+        <item name="indicatorName">BallSpinFadeLoaderIndicator</item>
+    </style>
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">24dip</item>
+        <item name="maxWidth">24dip</item>
+        <item name="minHeight">24dip</item>
+        <item name="maxHeight">24dip</item>
+        <item name="indicatorName">BallSpinFadeLoaderIndicator</item>
+    </style>
+    <style name="ActionButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">20dp</item> <!-- Offsets left drawable -->
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/crop__button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="ActionButtonText.Cancel">
+        <item name="android:text">@string/crop_cancel</item>
+    </style>
+    <style name="ActionButtonText.Done">
+        <item name="android:text">@string/crop_done</item>
+    </style>
+    <style name="CustomActionModeStyle" parent="Base.Widget.AppCompat.ActionMode">
+        <item name="background">@color/multiple_image_select_primary</item>
+    </style>
+    <style name="CustomToolbarTheme" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/multiple_image_select_toolbarPrimaryText</item>
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/cacheColorHint</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="EasyPermissions" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="EasyPermissions.Transparent" parent="EasyPermissions">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="FloderPopAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/imagepicker_pop_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/imagepicker_pop_slide_out</item>
+    </style>
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_cecece</item>
+    </style>
+    <style name="ImagePickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="ImagePickerThemeFullScreen" parent="ImagePickerTheme">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+    <style name="MIS_NO_ACTIONBAR" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="MultipleImageSelectTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/multiple_image_select_primary</item>
+        <item name="colorPrimaryDark">@color/multiple_image_select_primaryDark</item>
+        <item name="colorAccent">@color/multiple_image_select_accent</item>
+        <item name="actionModeStyle">@style/CustomActionModeStyle</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="OptionMenuStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textColor">#fefefe</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="VerticalLine">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray_cecece</item>
+    </style>
+    <style name="dialog_normal" parent="@android:style/Theme.Dialog">
+        <!-- 设置dialog区域（包含标题部分）前景，会遮盖windowContentOverlay  windowBackground   BackgroundDimEnabled   -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 表示浮在屏幕上： true  在屏幕中心，相当于浮在页面上；  false 相当于整个盖在activity上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否全屏，配合android:windowIsFloating = false使用  全屏时会遮盖状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 设置dialog是否没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="dialogui_bottom_style" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialogui_enter</item>
+        //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/dialogui_exit</item>
+        //退出时的动画
+    </style>
+    <style name="dialogui_center_style" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialogui_enter_center</item>
+    </style>
+    <style name="dialogui_datepick_FontStyleNormalLightBlackMiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="dialogui_datepick_dialog_untran" parent="dialogui_datepick_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="dialogui_datepick_fontstyle_normal_blackmiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="dialogui_datepick_fontstyle_normal_bluemiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/datepick_surance_blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="dialogui_datepick_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <style name="line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/line_bg</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+    <style name="nav_bar_text_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="navbar1_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+    <style name="navbar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@color/nav_bar_bg</item>
+    </style>
+    <style name="popupwindow_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/show_from_bottom</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/hide_to_bottom</item>
+    </style>
+    <style name="progressBarStyleSmall" parent="@android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">48.0dip</item>
+        <item name="android:maxHeight">48.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/loading</item>
+        <item name="android:minWidth">48.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="style_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="title_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

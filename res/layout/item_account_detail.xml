@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/account_detail_text_style"
+        android:text="生成时间:" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        style="@style/account_detail_text_style"
+        android:text="关联编号:" />
+
+    <TextView
+        style="@style/account_detail_text_style"
+        android:text="摘要" />
+
+    <TextView
+        style="@style/account_detail_text_style"
+        android:text="当前余额" />
+
+    <TextView
+        style="@style/account_detail_text_style"
+        android:text="类别" />
+
+    <TextView
+        style="@style/account_detail_text_style"
+        android:text="合同编号" />
+
+    <TextView
+        style="@style/account_detail_text_style"
+        android:text="附加信息" />
+
+</LinearLayout>

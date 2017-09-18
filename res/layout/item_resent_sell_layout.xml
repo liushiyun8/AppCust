@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_rent_bg" >
+
+    <RelativeLayout
+        android:id="@+id/iv_house_image_fa"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp">
+        <ImageView
+            android:id="@+id/iv_house_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             />
+        <TextView
+            android:id="@+id/tv_see_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="7sp"
+            android:text="99999"
+            android:background="#e0777777"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_house_image_fa" >
+
+        <TextView
+            android:id="@+id/house_name"
+            style="@style/house_info_item_text_style"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_5" />
+
+        <TextView
+            android:id="@+id/house_info"
+            style="@style/house_info_item_text_style"
+            android:layout_below="@+id/house_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_5" />
+    </RelativeLayout>
+
+</RelativeLayout>

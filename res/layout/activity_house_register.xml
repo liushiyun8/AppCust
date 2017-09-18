@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/button_text_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_20"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_30"
+            android:text="住宅"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提示 ："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色"
+                android:textColor="@color/blue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题为必填项"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/hor_line_grey_1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/city_Rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:padding="@dimen/dimen_10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <TextView
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="城        市 :" />
+
+                    <TextView
+                        android:id="@+id/city_name_tv"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="12dp"
+                        android:hint="请选择" />
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+            <View style="@style/hor_line_short_grey" />
+            <RelativeLayout
+                android:id="@+id/layout_house_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/txt_house_name"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="楼盘名称 :" />
+
+                <TextView
+                    android:id="@+id/edt_house_name"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toLeftOf="@+id/txt_house_name_mandatory"
+                    android:layout_toRightOf="@+id/txt_house_name"
+                    android:hint="请选择" />
+
+                <TextView
+                    android:id="@+id/txt_house_name_mandatory"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+            <View style="@style/hor_line_short_grey" />
+            <RelativeLayout
+                android:id="@+id/ListBuilding_Rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:padding="@dimen/dimen_10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <TextView
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="栋        座 :" />
+
+                    <TextView
+                        android:id="@+id/ListBuilding_tv"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="12dp"
+                        android:hint="请选择" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/ListBuilding_tv_red"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+            <View style="@style/hor_line_short_grey" />
+            <RelativeLayout
+                android:id="@+id/queryListEkecell_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:padding="@dimen/dimen_10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <TextView
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="单        元 :" />
+
+                    <TextView
+                        android:id="@+id/queryListEkecell_tv"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="12dp"
+                        android:hint="请选择" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/queryListEkecell_tv_red"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/txt_fanghao"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="房        号 :" />
+
+                <EditText
+                    android:id="@+id/et_fanghao"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/txt_fanghao"
+                    android:hint="请输入"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/Bn_ropertyInvalid"
+                    android:layout_width="@dimen/dimen_70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_toRightOf="@+id/et_fanghao"
+                    android:background="@drawable/bg_phone_entrust"
+                    android:text="重盘检测"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/add_fangyuan_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txt_fanghao_mandatory"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+
+
+            </RelativeLayout>
+
+
+            <View style="@style/hor_line_short_grey" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/tv_fangshi_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="方        式 :" />
+
+                <RadioGroup
+                    android:id="@+id/rg_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_fangshi_tip"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_zhengzu"
+                        style="@style/add_fangyuan_radiobutton_style"
+                        android:drawablePadding="4dp"
+                        android:checked="true"
+                        android:text="出租" />
+
+                    <RadioButton
+                        android:id="@+id/rb_fenzu"
+                        style="@style/add_fangyuan_radiobutton_style"
+                        android:drawablePadding="4dp"
+                        android:text="分租" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_chushou"
+                        style="@style/add_fangyuan_radiobutton_style"
+                        android:drawablePadding="4dp"
+                        android:text="出售" />
+
+
+                </RadioGroup>
+            </RelativeLayout>
+            <View style="@style/hor_line_short_grey" />
+
+            <LinearLayout
+                android:id="@+id/shuojia_Linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/add_fangyuan_blue_text_style"
+                            android:text="售        价 :" />
+
+                        <EditText
+                            android:id="@+id/edt_price"
+                            style="@style/add_fangyuan_edittext_style"
+                            android:layout_width="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="请输入"
+                            android:inputType="number" />
+
+                        <TextView
+                            style="@style/add_fangyuan_text_style"
+                            android:layout_marginLeft="10dp"
+                            android:text="万元" />
+
+                    </LinearLayout>
+
+                    <TextView
+
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View style="@style/hor_line_short_grey" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_shuifei"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:padding="@dimen/dimen_10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/add_fangyuan_blue_text_style"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="税费说明 :" />
+
+                        <TextView
+                            android:id="@+id/txt_shuifei_select"
+                            style="@style/add_fangyuan_text_style"
+                            android:layout_marginLeft="12dp"
+                            android:hint="请选择" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_shuifei_mandatory"
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+                <View style="@style/hor_line_short_grey" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_chuzu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_10">
+
+                    <TextView
+                        android:id="@+id/txt_zujin"
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:text="租        金 :" />
+
+                    <EditText
+                        android:id="@+id/et_zujin"
+                        style="@style/add_fangyuan_edittext_style"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/txt_zujin"
+                        android:hint="请输入"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/tv_zujin_danwei"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/txt_zushou_mandatory"
+                        android:layout_toRightOf="@id/et_zujin"
+                        android:text="元/月" />
+
+                    <TextView
+                        android:id="@+id/txt_zushou_mandatory"
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View style="@style/hor_line_short_grey" />
+
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/fenzu_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"
+                        android:padding="@dimen/dimen_10">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            >
+
+                            <TextView
+                                style="@style/add_fangyuan_blue_text_style"
+                                android:layout_centerVertical="true"
+                                android:text="合租方式 :" />
+                            <EditText
+                                android:id="@+id/et_hezu"
+                                style="@style/add_fangyuan_edittext_style"
+                                android:layout_width="80dp"
+                                android:layout_marginLeft="10dp"
+                                android:hint="请输入"
+                                android:inputType="number" />
+                            <TextView
+                                style="@style/add_fangyuan_text_style"
+                                android:layout_marginLeft="10dp"
+                                android:text="户合租" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/add_fangyuan_bitian_text_style"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+                    <View style="@style/hor_line_short_grey" />
+                    <RelativeLayout
+                        android:id="@+id/layout_chuzujian"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"
+                        android:padding="@dimen/dimen_10">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            >
+
+                            <TextView
+
+                                style="@style/add_fangyuan_blue_text_style"
+                                android:layout_centerVertical="true"
+                                android:text="出  租  间 :" />
+
+                            <TextView
+                                android:id="@+id/txt_chuzujian_select"
+                                style="@style/add_fangyuan_text_style"
+                                android:layout_marginLeft="12dp"
+                                android:hint="请选择" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/add_fangyuan_bitian_text_style"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+                    <View style="@style/hor_line_short_grey" />
+                    <RelativeLayout
+                        android:id="@+id/layout_fenzutiaojian"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"
+                        android:padding="@dimen/dimen_10">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            >
+
+                            <TextView
+                                style="@style/add_fangyuan_blue_text_style"
+                                android:layout_centerVertical="true"
+                                android:text="分租条件 :" />
+
+                            <TextView
+                                android:id="@+id/txt_fenzutiaojian_select"
+                                style="@style/add_fangyuan_text_style"
+                                android:layout_marginLeft="12dp"
+                                android:hint="请选择" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/add_fangyuan_bitian_text_style"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/hor_line_short_grey" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_10">
+
+                    <TextView
+                        android:id="@+id/txt_mianji"
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:text="面        积 :" />
+
+                    <EditText
+                        android:id="@+id/et_mianji"
+                        style="@style/add_fangyuan_edittext_style"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/txt_mianji"
+                        android:hint="请输入"
+                        android:inputType="number" />
+
+                    <TextView
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/et_mianji"
+                        android:text="平方米" />
+
+                    <TextView
+                        android:id="@+id/txt_mianji_mandatory"
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View style="@style/hor_line_short_grey" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_10">
+
+                    <TextView
+                        android:id="@+id/txt_louceng"
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:text="楼        层 :" />
+
+                    <TextView
+                        android:id="@+id/txt_louceng1"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/txt_louceng"
+                        android:text="第" />
+
+                    <EditText
+                        android:id="@+id/et_ceng"
+                        style="@style/add_fangyuan_edittext_style"
+                        android:layout_width="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/txt_louceng1"
+                        android:hint="请输入"
+                        android:inputType="number" />
+                    <TextView
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/et_ceng"
+                        android:text="层" />
+                    <TextView
+                        android:id="@+id/txt_louceng2"
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="20dp"
+
+                        android:layout_toRightOf="@id/et_ceng"
+                        android:text="，共" />
+
+                    <EditText
+                        android:id="@+id/et_ceng_count"
+                        style="@style/add_fangyuan_edittext_style"
+                        android:layout_width="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/txt_louceng2"
+                        android:hint="请输入"
+                        android:inputType="number" />
+
+                    <TextView
+                        style="@style/add_fangyuan_text_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/et_ceng_count"
+                        android:text="层" />
+
+                    <TextView
+                        android:id="@+id/txt_louceng_mandatory"
+                        style="@style/add_fangyuan_bitian_text_style"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/iv_line"
+                    style="@style/hor_line_short_grey" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_kanfang"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/txt_kanfang_type"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="看房方式 :" />
+
+                <TextView
+                    android:id="@+id/txt_kanfang_type_select"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/txt_kanfang_mandatory"
+                    android:layout_toRightOf="@+id/txt_kanfang_type"
+                    android:hint="请选择"
+                    android:text="" />
+
+
+                <TextView
+                    android:id="@+id/txt_kanfang_mandatory"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_huxing_tip"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="户        型 ：" />
+
+                <EditText
+                    android:id="@+id/et_huxing_shi_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_huxing_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_huxing_shi_tip"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/et_huxing_shi_num"
+                    android:text="室" />
+
+                <EditText
+                    android:id="@+id/et_huxing_ting_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_huxing_shi_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_huxing_ting_tip"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/et_huxing_ting_num"
+                    android:text="厅" />
+
+                <EditText
+                    android:id="@+id/et_huxing_wei_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_huxing_ting_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_huxing_wei_tip"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/et_huxing_wei_num"
+                    android:text="卫" />
+
+                <EditText
+                    android:id="@+id/et_huxing_yangtai_num"
+                    style="@style/add_fangyuan_edittext_style"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_huxing_wei_tip"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/et_huxing_yangtai_num"
+                    android:text="阳台" />
+
+                <TextView
+                    android:id="@+id/txt_huxing_mandatory"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View style="@style/hor_line_short_grey" />
+            <RelativeLayout
+                android:id="@+id/layout_chaoxiang"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/txt_chaoxiang"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="朝        向 :" />
+
+                <TextView
+                    android:id="@+id/txt_txt_chaoxiang_select"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/txt_chaoxiang_mandatory"
+                    android:layout_toRightOf="@+id/txt_chaoxiang"
+                    android:hint="请选择"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txt_chaoxiang_mandatory"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+
+
+            <View style="@style/hor_line_short_grey" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_zhuangxiu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/txt_zhuangxi"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="装修程度 :" />
+
+                <TextView
+                    android:id="@+id/txt_zhuangxi_select"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/txt_zhuangxi_mandatory"
+                    android:layout_toRightOf="@+id/txt_zhuangxi"
+                    android:hint="请选择"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txt_zhuangxi_mandatory"
+                    style="@style/add_fangyuan_bitian_text_style"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <View style="@style/hor_line_short_grey" />
+
+            <RelativeLayout
+                android:id="@+id/layout_peitao"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/txt_peitao"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="配套设施 :" />
+
+                <TextView
+                    android:id="@+id/txt_peitao_select"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/txt_peitao"
+                    android:hint="请选择"
+                    android:text="" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/hor_line_short_grey" />
+
+            <LinearLayout
+                android:id="@+id/layout_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/txt_tedian"
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="房源特点 :" />
+
+                <TextView
+                    android:id="@+id/txt_tedian_add"
+                    style="@style/add_fangyuan_text_style"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/txt_tedian_mandatory"
+                    android:layout_toRightOf="@+id/txt_tedian"
+                    android:hint="请选择"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_register_house_desc"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/add_fangyuan_blue_text_style"
+                        android:padding="@dimen/dimen_10"
+                        android:text="房源图片 :" />
+                    <GridView
+                        android:id="@+id/gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="20dp"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/hor_line_short_grey"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    style="@style/add_fangyuan_text_style"
+                    android:padding="8dp"
+                    android:text="注:多图房源可获得更多的点击量。系统会自动为房源匹配小区图" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    style="@style/add_fangyuan_blue_text_style"
+                    android:text="免佣直租 :" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_zhizu_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rg_no_zhi"
+                        style="@style/add_radiobutton_style"
+                        android:drawablePadding="4dp"
+                        android:text="否" />
+
+                    <RadioButton
+                        android:id="@+id/rg_yes_zhi"
+                        style="@style/add_radiobutton_style"
+                        android:drawablePadding="4dp"
+                        android:text="是" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_register_house_desc"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/add_fangyuan_text_style"
+                    android:text="其他说明：" />
+
+                <EditText
+                    android:id="@+id/et_qita_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/bg_house_track_content"
+                    android:gravity="left|top"
+                    android:hint=""
+                    android:inputType="textMultiLine"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"></EditText>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+        <Button
+            android:id="@+id/btn_lijifabu"
+            style="@style/dengji_bt_style"
+            android:layout_width="match_parent"
+            android:text="立即登记"
+            />
+
+
+    <!--<include layout="@layout/layout_house_add_head"></include>-->
+
+
+</LinearLayout>

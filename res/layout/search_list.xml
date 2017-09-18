@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_150"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        style="@style/CustomListView"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="match_parent"
+        android:divider="#bcbcbc"
+        android:dividerHeight="1dip" />
+
+</RelativeLayout>

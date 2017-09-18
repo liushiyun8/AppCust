@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_header_height"
+        android:background="@color/header_title" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:onClick="back"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:text="后台查询"
+            android:textColor="@color/header"
+            android:textSize="@dimen/tab_header_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:background="@drawable/bg_chayicha"
+            android:orientation="vertical"
+            android:paddingBottom="16dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="10dip" >
+
+            <!--
+        <RadioGroup
+            android:id="@+id/rg_chaxun_fangshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dip" >
+
+            <RadioButton
+                android:id="@+id/rb_shouji_chaxun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/custom_rb"
+                android:checked="true"
+                android:text="根据手机号查"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/rb_housenumber_chaxun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dip"
+                android:button="@drawable/custom_rb"
+                android:text="根据房源号查"
+                android:textColor="@color/custom_grey"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </RadioGroup>
+            -->
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="请检查手机号"
+                android:textColor="#fe0000"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bg_chayicha_content"
+                android:gravity="center"
+                android:hint="手机号码/房源编号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingBottom="7dip"
+                android:paddingTop="7dip"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_chayicha_confirm_disabled"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="确定"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

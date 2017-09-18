@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="load_more_text">加载更多....</string>
+    <string name="crop_saving">保存图片…</string>
+    <string name="crop_wait">请稍等…</string>
+    <string name="crop_pick_error">图片无效</string>
+
+    <string name="crop_done">保存</string>
+    <string name="crop_cancel">取消</string>
+
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="login_fail">登录失败</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="socket_cancle">取消操作</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    <string name="app_run_error">抱歉，发生异常</string>
+    <string name="back_exit_tips">再按一次返回键退出应用</string>
+    <string name="loading">loading</string>
+    <string name="message_error">当前网络不可用，请检查你的网络设置</string>
+    <string name="refresh_fail">刷新失败！</string>
+    <string name="refresh_susses">刷新成功！</string>
+    <string name="load_susses">加载成功！</string>
+    <string name="load_all_susses">已经全部加载完毕！</string>
+    <string name="load_fail">加载失败！</string>
+    <string name="api_timeout">连接超时</string>
+    <string name="api_error">接口数据异常!</string>
+    <string name="select">%1$s/%2$s</string>
+    <string name="all_images">全部图片</string>
+    <string name="folder_image_count">共%1$d张</string>
+    <string name="preview_image_count">%1$s/%2$s</string>
+    <string name="select_limit">最多选择%1$s张图片</string>
+    <string name="complete">完成</string>
+    <string name="select_complete">完成(%1$s/%2$s)</string>
+    <string name="preview_count">预览(%1$s)</string>
+    <string name="photo_crop">图片裁剪</string>
+    <string name="origin">原图</string>
+    <string name="origin_size">原图(%1$s)</string>
+    <string name="tip_network_error">没有可用的网络</string>
+    <string name="api_cancle">取消请求</string>
+
+    <string name="tv_imagepicker_back">返回</string>
+    <string name="error_no_sdcard">SD卡不存在！</string>
+    <string name="error_imagepicker_scanfail">无法扫描本地图片数据</string>
+    <string name="error_imagepicker_parsefail">无法读取图片</string>
+    <string name="label_imagepicker_allfloder">全部图片</string>
+    <string name="warning_imagepicker_limit_num">只能选择%1$s张照片</string>
+    <string name="tv_imagepicker_gridactivity_title">选择图片</string>
+    <string name="btn_imagepicker_ok">完成(%1$s/%2$s)</string>
+    <string name="tv_imagepicker_griditem_camera">拍摄照片</string>
+    <string name="tv_imagepicker_floder_img_num">%1$s张图片</string>
+    <string name="tv_imagepicker_pager_titlecount">%1$s/%2$s</string>
+    <string name="tv_imagepicker_vp_bottom_choose">选中</string>
+    <string name="tv_imagepicker_actionbar_preview">预览</string>
+    <string name="warning_imagepicker_permission_sdcard_denied">无法获取外部存储卡读写权限</string>
+    <string name="warning_imagepicker_permission_camera_denied">无法获取拍照权限</string>
+    <string name="dialog_imagepicker_permission_title">权限申明</string>
+    <string name="dialog_imagepicker_permission_confirm">我知道了</string>
+    <string name="dialog_imagepicker_permission_nerver_ask_confirm">去设置</string>
+    <string name="dialog_imagepicker_permission_nerver_ask_cancel">取消</string>
+    <string name="dialog_imagepicker_permission_sdcard_message">应用程序需要获取外部存储卡的读写权限，否则无法获取照片数据!</string>
+    <string name="dialog_imagepicker_permission_camera_message">应用程序需要获取拍照权限，否则无法拍摄照片!</string>
+    <string name="dialog_imagepicker_permission_sdcard_nerver_ask_message">应用程序无法获取外部存储卡的读写权限，导致无法获取照片数据，您可通过系统设置界面打开软件的读写权限</string>
+    <string name="dialog_imagepicker_permission_camera_nerver_ask_message">应用程序无法获取拍照权限，导致无法启用拍照功能，您可通过系统设置界面打开软件的拍照权限</string>
+
+    <string name="rationale_ask_again">app需要相关权限,请打开设置修改权限</string>
+    <string name="title_settings_dialog">请求权限</string>
+</resources>

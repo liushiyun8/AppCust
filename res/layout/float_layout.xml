@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+
+    <Button 
+        android:id="@+id/float_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_daikan"
+        android:paddingLeft="6dip"
+        android:paddingRight="20dip"
+        android:text="带看中"
+        android:textColor="#00ffffff"/>
+</LinearLayout>

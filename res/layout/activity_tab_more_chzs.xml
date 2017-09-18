@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/chzs_back"
+        android:visibility="visible"
+        android:onClick="back" />
+
+    <ImageView
+        android:id="@+id/iv_history"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/chzs_history"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#90313131" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/chzs_l" />
+
+                <ImageView
+                    android:id="@+id/iv_top"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_above="@id/iv_left"
+                    android:layout_toRightOf="@id/iv_left"
+                    android:src="@drawable/chzs_u" />
+
+                <ImageView
+                    android:id="@+id/iv_down"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_below="@id/iv_left"
+                    android:layout_toRightOf="@id/iv_left"
+                    android:src="@drawable/chzs_d" />
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_down"
+                    android:src="@drawable/chzs_r" />
+
+                <Button
+                    android:id="@+id/btn_luodian"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="#ffffff"
+                    android:text="落点"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" /> -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="6dip" >
+
+                    	<Button
+                            android:id="@+id/btn_kaishihuatu"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/chzs_border"
+                            android:text="确定\n坐标"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    	
+                    	<Button
+                            android:id="@+id/btn_quanbuqingchu"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/chzs_border"
+                            android:text="全部\n清除"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_xianghouchexiao"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/chzs_border"
+                            android:text="向后\n撤销"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                       <Button
+                            android:id="@+id/btn_xiangqianchexiao"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="44dp"
+                            android:background="@drawable/chzs_border"
+                            android:layout_gravity="center_vertical"
+                            android:text="向前\n撤销"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" /> 
+                        
+                        <Button
+                            android:id="@+id/btn_weihe"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/chzs_border"
+                            android:text="结束"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                       
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

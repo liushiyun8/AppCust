@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_propertyno"
+            style="@style/mine_item_text3_style"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="房源编号:" />
+
+        <TextView
+            android:id="@+id/txt_empname"
+            style="@style/mine_item_text3_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="签约助理:" />
+
+        <TextView
+            android:id="@+id/txt_house_info"
+            style="@style/mine_item_text3_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="房源信息:" />
+
+        <TextView
+            android:id="@+id/txt_trade"
+            style="@style/mine_item_text3_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="合同编号:" />
+
+        <TextView
+            android:id="@+id/txt_sf_price"
+            style="@style/mine_item_text3_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="首     付:" />
+
+        <TextView
+            android:id="@+id/txt_yj_price"
+            style="@style/mine_item_text3_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="押    金:" />
+
+        <TextView
+            android:id="@+id/txt_other_price"
+            style="@style/mine_item_text3_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="其它费用:" />
+
+
+        <TextView
+            style="@style/mine_item_text3_style"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:id="@+id/pay_price"
+            android:textColor="@color/nav_title_color"
+            android:text="已支付:" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_50">
+
+            <TextView
+                style="@style/mine_item_text3_style"
+                android:text="现付"
+                android:textSize="18sp" />
+
+            <EditText
+                style="@style/edit_style"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:background="@drawable/pay_et_bg"
+                android:layout_width="@dimen/dimen_100"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:id="@+id/edt_price"
+                android:lines="1"
+                android:textColor="@color/white_blue" />
+            <TextView
+                style="@style/mine_item_text_style"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:text="元" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/pay_item_style"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pay_weixin"
+        android:drawableLeft="@drawable/ic_wxpay"
+        android:text="微信支付" />
+    <TextView
+        style="@style/pay_item_style"
+        android:id="@+id/pay_alipay"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/icon_alipay"
+        android:text="支付宝" />
+
+
+    <TextView
+        style="@style/mine_item_text3_style"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:id="@+id/txt_cancle"
+        android:textColor="@color/nav_title_color"
+        android:text="暂不支付" />
+
+</LinearLayout>

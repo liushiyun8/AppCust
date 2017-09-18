@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_zhushou"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_zhushou_tip"
+                style="@style/add_fangyuan_text_style"
+                android:text="租        金：" />
+
+            <ImageView
+                android:id="@+id/iv_zhushou_arrow"
+                style="@style/add_fangyuan_arrow_style" />
+
+            <TextView
+                android:id="@+id/tv_zhushou_bitian_tip"
+                style="@style/add_fangyuan_bitian_text_style"
+                android:layout_toLeftOf="@id/iv_zhushou_arrow" />
+
+            <EditText
+                android:id="@+id/et_zhushou_zhujin"
+                style="@style/add_fangyuan_edittext_style"
+                android:layout_width="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_zhushou_tip" />
+
+            <TextView
+                style="@style/add_fangyuan_text_style"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/tv_zhushou_bitian_tip"
+                android:layout_toRightOf="@id/et_zhushou_zhujin"
+                android:text="元/月" />
+        </RelativeLayout>
+
+        <View style="@style/hor_line_short_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_zhushou_shoujia_tip"
+                style="@style/add_fangyuan_text_style"
+                android:text="售        价：" />
+
+            <ImageView
+                android:id="@+id/iv_zhushou_shoujia_arrow"
+                style="@style/add_fangyuan_arrow_style" />
+
+            <TextView
+                android:id="@+id/tv_zhushou_shoujia_bitian_tip"
+                style="@style/add_fangyuan_bitian_text_style"
+                android:layout_toLeftOf="@id/iv_zhushou_shoujia_arrow" />
+
+            <EditText
+                android:id="@+id/et_zhushou_shoujia"
+                style="@style/add_fangyuan_edittext_style"
+                android:layout_width="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_zhushou_shoujia_tip" />
+
+            <TextView
+                style="@style/add_fangyuan_text_style"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/tv_zhushou_shoujia_bitian_tip"
+                android:layout_toRightOf="@id/et_zhushou_shoujia"
+                android:text="万" />
+        </RelativeLayout>
+    </LinearLayout>

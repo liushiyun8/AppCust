@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_house_room">
+        <item>全部</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4+</item>
+    </string-array>
+
+    <string-array name="contract_function">
+        <item>合同详情</item>
+        <item>继续支付</item>
+        <item>申请退款</item>
+    </string-array>
+    <string-array name="cause">
+        <item>我不想买/租了</item>
+        <item>房源瑕疵未事前声明</item>
+        <item>助理服务水平欠佳</item>
+        <item>其它</item>
+    </string-array>
+    <!-- 委托记录-->
+
+    <string-array name="fundtion">
+        <item>查看</item>
+        <item>宣传一下</item>
+        <item>房间图</item>
+        <item>继续登记</item>
+        <item>删除/撤回</item>
+    </string-array>
+    <string-array name="house_fundtion_list">
+        <item>查看</item>
+        <item>房源修改</item>
+        <item>房屋图片</item>
+        <item>微信推荐</item>
+        <item>二维码订单</item>
+        <item>更换封面</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <!-- 房源登记界面-->
+    <string-array name="chuzujian">
+        <item>主卧</item>
+        <item>次卧</item>
+        <item>床位</item>
+        <item>隔断间</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="fenzutiaojian">
+        <item>限女性</item>
+        <item>限男性</item>
+        <item>限夫妻</item>
+        <item>不限</item>
+    </string-array>
+
+    <string-array name="chao_xiang">
+        <item>东</item>
+        <item>南</item>
+        <item>西</item>
+        <item>北</item>
+        <item>东南</item>
+        <item>东北</item>
+        <item>西南</item>
+        <item>西北</item>
+        <item>南北通</item>
+        <item>东西通</item>
+    </string-array>
+
+
+    <string-array name="peitaosheshi">
+        <item>床</item>
+        <item>家具</item>
+        <item>有线电视</item>
+        <item>洗衣机</item>
+        <item>空调</item>
+        <item>冰箱</item>
+        <item>热水器</item>
+        <item>宽带</item>
+        <item>电话</item>
+        <item>天然(煤)气</item>
+        <item>厨具</item>
+        <item>微波炉</item>
+    </string-array>
+
+
+    <string-array name="chaoxiang">
+        <item>东</item>
+        <item>南</item>
+        <item>西</item>
+        <item>北</item>
+        <item>东南</item>
+        <item>东北</item>
+        <item>西南</item>
+        <item>西北</item>
+        <item>南北通</item>
+        <item>东西通</item>
+    </string-array>
+
+    <string-array name="zhuangxiu">
+        <item>豪华装修</item>
+        <item>精装修</item>
+        <item>中装修</item>
+        <item>简单装修</item>
+        <item>毛坯</item>
+    </string-array>
+
+    <string-array name="zhuangxiuchengdu">
+        <item>豪华装修</item>
+        <item>精装修</item>
+        <item>中装修</item>
+        <item>简单装修</item>
+        <item>毛坯</item>
+        <item>冰箱</item>
+
+    </string-array>
+</resources>
